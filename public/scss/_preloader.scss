@@ -1,0 +1,188 @@
+/*=========== Preloader ============*/
+
+.ctn-preloader {
+    align-items: center;
+    cursor: default;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+    .animation-preloader{
+        z-index: 1000;
+        .spinner{
+            animation: spinner 1s infinite linear;
+            border-radius: 50%;
+            border: 3px solid rgba(0, 0, 0, 0.2);
+            border-top-color: #000000;
+            height: 9em;
+            margin: 0 auto 3.5em auto;
+            width: 9em;
+        }
+        .txt-loading{
+            font: bold 5em $pop;
+            text-align: center;
+            user-select: none;
+            .letters-loading{
+                color: rgba(0, 0, 0, 0.2);
+                position: relative;
+                &:before{
+                    animation: letters-loading 4s infinite;
+                    color: #000000;
+                    content: attr(data-text-preloader);
+                    left: 0;
+                    opacity: 0;
+                    font-family: $pop;
+                    position: absolute;
+                    top: -3px;
+                    transform: rotateY(-90deg);
+                }
+                &:nth-child(2){
+                    &:before{
+                        animation-delay: 0.2s;
+                    }
+                }
+                &:nth-child(3){
+                    &:before{
+                        animation-delay: 0.4s;
+                    }
+                }
+                &:nth-child(4){
+                    &:before{
+                        animation-delay: 0.6s;
+                    }
+                }
+                &:nth-child(5){
+                    &:before{
+                        animation-delay: 0.8s;
+                    }
+                }
+                &:nth-child(6){
+                    &:before{
+                        animation-delay: 1s;
+                    }
+                }
+                &:nth-child(7){
+                    &:before{
+                        animation-delay: 1.2s;
+                    }
+                }
+                &:nth-child(8){
+                    &:before{
+                        animation-delay: 1.4s;
+                    }
+                }
+            }
+        }
+    }
+    &.dark{
+        .animation-preloader{
+            .spinner{
+                border-color: rgba(255, 255, 255, 0.2);
+                border-top-color: #fff;
+                
+            }
+            .txt-loading{
+                .letters-loading{
+                    color: rgba(255, 255, 255, 0.2);
+                    &:before{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: #3b3b3b;
+    }
+    .loader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        z-index: 1;
+        pointer-events: none;
+        .row{
+            height: 100%;
+        }
+        .loader-section{
+            padding: 0px;
+            .bg{
+                background-color: #ffffff;
+                height: 100%;
+                left: 0;
+                width: 100%;
+                transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+            }
+        }
+        &.dark_bg{
+            .loader-section{
+                .bg{
+                    background: #111339;
+                }
+            }
+        }
+    }
+    &.loaded{
+        .animation-preloader{
+            opacity: 0;
+            transition: 0.3s ease-out;
+        }
+        .loader-section {
+            .bg{
+                width: 0;
+                transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
+            }
+        }
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes letters-loading {
+    0%,
+    75%,
+    100% {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+
+    25%,
+    50% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ctn-preloader .animation-preloader .spinner {
+        height: 8em;
+        width: 8em;
+    }
+    .ctn-preloader .animation-preloader .txt-loading {
+        font: bold 3.5em $pop;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ctn-preloader .animation-preloader .spinner {
+        height: 7em;
+        width: 7em;
+    }
+    .ctn-preloader .animation-preloader .txt-loading {
+        font: bold 2em $pop;
+    }
+}

@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,bold,italic&subset=latin,latin-ext");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", cursive;
+}
+
+.features_item img {
+  max-width: 60%;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd {
+  width: 100% !important;
+}
+
+.sec-btn {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #911f8e,
+    #fd7014,
+    #c419bf,
+    #dc6010
+  );
+  border-radius: 8px;
+  moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-transform: unset;
+}
+
+.sec-btn:hover {
+  background-position: 100% 0;
+  moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.sec-btn:focus {
+  outline: none;
+}
+
+.sec-btn:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+  background: #ff7847;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+.terms {
+  color: #ff5a1f;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  text-transform: unset;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.ant-message {
+  z-index: 1000000;
+}
+
+.uploaded-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.donation_page_image {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .donation_page_image {
+    height: 225px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .sec-btn {
+    height: 40px;
+    width: 170px;
+    font-size: 13px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 898px) and (max-width: 1020px) {
+  .donation_page_image {
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .donation_page_image {
+    height: 205px;
+    object-fit: cover;
+  }
+}
+
+/* @media only screen and (min-width: 898px) and (max-width: 1160px) {
+  .donation_page_image {
+    height: 225px;
+    object-fit: cover;
+  }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .donation_page_image {
+    height: 225px;
+    object-fit: cover;
+  }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .donation_page_image {
+    height: 225px;
+    object-fit: cover;
+  }
+}
+
+.ant-message-notice.ant-message-notice-success .ant-message-notice-content {
+  background: #def7ec;
+  color: #014737;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.ant-message-notice.ant-message-notice-error .ant-message-notice-content {
+  background: #fde8e8;
+  color: #771d1d;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.ant-message-notice.ant-message-notice-warning .ant-message-notice-content {
+  background: #fdf6b2;
+  color: #9f580a;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.code-input {
+  width: 50px;
+  height: 50px;
+  background: #f3f4f6;
+  border-radius: 7px;
+  margin: 0 5px;
+  border: 1px solid #f3f4f6;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #1f2a37;
+}
+
+.code-input:focus {
+  background: #f3f4f6;
+  border: 1px solid #ff956b;
+}
+
+.two-factor-code-input {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 7px;
+  margin: 0 5px;
+  border: 1px solid #f3f4f6;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #1f2a37;
+}
+
+.two-factor-code-input:focus {
+  background: #fff;
+  border: 1px solid #ff956b;
+}
+
+.ant-picker.ant-picker-range {
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ant-picker.ant-picker-range .ant-picker-suffix {
+  color: #374151;
+}
+
+.ant-picker.ant-picker-range input {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ant-picker.ant-picker-range input::placeholder {
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ant-picker.ant-picker-range input:focus {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+}
+
+.MuiTablePagination-actions {
+  margin-top: -10px;
+}
+
+.transactions-select .MuiTypography-root.MuiTypography-body1 {
+  color: #374151;
+}
+
+.transactions-filter .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0 {
+  width: 100%;
+}
+
+.code-input {
+  height: 40px;
+  width: 40px;
+}
+
+.two-factor-code-input {
+  height: 40px;
+  width: 40px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd {
+  height: 40px;
+  width: 105px;
+  background: white;
+  margin-top: -5px;
+  border: none;
+  border-radius: 1px solid transparent;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd
+  input {
+  color: #374151;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd
+  svg {
+  height: 14px;
+  width: 12px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd
+  input::placeholder {
+  color: #374151;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+.MuiTablePagination-displayedRows {
+  color: #374151;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nodeless-logo {
+  height: 22px;
+}
+
+.ant-notification-notice.ant-notification-notice-closable {
+  padding: 0px;
+}
+
+.ant-notification-notice-message {
+  padding-inline-end: 0px;
+}
+
+.withdraw-prompt {
+  background: #fdf6b2;
+  padding-inline-end: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+  width: unset;
+  margin-bottom: 0px;
+}
+
+.paywall-wysiwyg {
+  height: 100px;
+}

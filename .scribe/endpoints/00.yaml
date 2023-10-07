@@ -1,0 +1,50 @@
+name: 'Server Info'
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/status
+    metadata:
+      groupName: 'Server Info'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get API Status'
+      description: 'Displays if the API is online or offline.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+          "data": {
+           "code": 200,
+           "status": "online",
+           "node": "LND"
+           }
+          }
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []

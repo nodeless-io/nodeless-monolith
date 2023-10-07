@@ -1,0 +1,329 @@
+name: 'Paywall Webhooks'
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/paywall/{id}/webhook'
+    metadata:
+      groupName: 'Paywall Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Paywall Webhooks'
+      description: 'Displays a list of webhooks belonging to the paywall.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the paywall.'
+        required: true
+        example: e557543c-092f-473c-935f-8eeb772ffc61
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: e557543c-092f-473c-935f-8eeb772ffc61
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":null,"url":"https:\/\/utxo.one","secret":"''B}bquoyg?XnAl.l","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null},{"id":null,"url":"https:\/\/utxo.one","secret":"zEZK5E","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}],"links":{"first":"\/?page=1","last":"\/?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"\/?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"\/","per_page":15,"to":2,"total":2}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/paywall/{id}/webhook'
+    metadata:
+      groupName: 'Paywall Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create Paywall Webhook'
+      description: 'Creates a paywall webhook.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the paywall.'
+        required: true
+        example: e557543c-092f-473c-935f-8eeb772ffc61
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: e557543c-092f-473c-935f-8eeb772ffc61
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      type:
+        name: type
+        description: 'Must be one of <code>store</code>, <code>donation_page</code>, <code>paywall</code>, or <code>inbox</code>.'
+        required: true
+        example: paywall
+        type: string
+        custom: []
+      url:
+        name: url
+        description: 'Must be a valid URL.'
+        required: true
+        example: 'http://sanford.com/ut-iste-perspiciatis-repellat-saepe.html'
+        type: string
+        custom: []
+      events:
+        name: events
+        description: 'Must be one of <code>new</code>, <code>pending_confirmation</code>, <code>paid</code>, <code>overpaid</code>, <code>underpaid</code>, <code>in_flight</code>, <code>expired</code>, or <code>cancelled</code>.'
+        required: true
+        example:
+          - expired
+        type: 'string[]'
+        custom: []
+      secret:
+        name: secret
+        description: ''
+        required: true
+        example: quo
+        type: string
+        custom: []
+      status:
+        name: status
+        description: 'Must be one of <code>active</code> or <code>inactive</code>.'
+        required: true
+        example: active
+        type: string
+        custom: []
+    cleanBodyParameters:
+      type: paywall
+      url: 'http://sanford.com/ut-iste-perspiciatis-repellat-saepe.html'
+      events:
+        - expired
+      secret: quo
+      status: active
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/paywall/{id}/webhook/{webhookId}'
+    metadata:
+      groupName: 'Paywall Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Paywall Webhook'
+      description: "Displays a paywall webhook's details."
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the paywall.'
+        required: true
+        example: e557543c-092f-473c-935f-8eeb772ffc61
+        type: string
+        custom: []
+      webhookId:
+        name: webhookId
+        description: ''
+        required: true
+        example: quaerat
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: e557543c-092f-473c-935f-8eeb772ffc61
+      webhookId: quaerat
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":null,"url":"https:\/\/utxo.one","secret":"bV@)CRBhVUK[wd%","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/paywall/{id}/webhook/{webhookId}'
+    metadata:
+      groupName: 'Paywall Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete Paywall Webhook'
+      description: 'Deletes a paywall webhook.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the paywall.'
+        required: true
+        example: e557543c-092f-473c-935f-8eeb772ffc61
+        type: string
+        custom: []
+      webhookId:
+        name: webhookId
+        description: ''
+        required: true
+        example: rerum
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: e557543c-092f-473c-935f-8eeb772ffc61
+      webhookId: rerum
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":null,"url":"https:\/\/utxo.one","secret":"[\\i:>COoGX.7a2\"","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/v1/paywall/{id}/webhook/{webhookId}'
+    metadata:
+      groupName: 'Paywall Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Paywall Webhook'
+      description: 'Updates a paywall webhook.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the paywall.'
+        required: true
+        example: e557543c-092f-473c-935f-8eeb772ffc61
+        type: string
+        custom: []
+      webhookId:
+        name: webhookId
+        description: ''
+        required: true
+        example: est
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: e557543c-092f-473c-935f-8eeb772ffc61
+      webhookId: est
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      url:
+        name: url
+        description: 'Must be a valid URL.'
+        required: true
+        example: 'http://walsh.info/beatae-rem-tempore-perferendis-cumque.html'
+        type: string
+        custom: []
+      events:
+        name: events
+        description: 'Must be one of <code>new</code>, <code>pending_confirmation</code>, <code>paid</code>, <code>overpaid</code>, <code>underpaid</code>, <code>in_flight</code>, <code>expired</code>, or <code>cancelled</code>.'
+        required: true
+        example:
+          - overpaid
+        type: 'string[]'
+        custom: []
+      status:
+        name: status
+        description: 'Must be one of <code>active</code> or <code>inactive</code>.'
+        required: true
+        example: active
+        type: string
+        custom: []
+    cleanBodyParameters:
+      url: 'http://walsh.info/beatae-rem-tempore-perferendis-cumque.html'
+      events:
+        - overpaid
+      status: active
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":null,"url":"https:\/\/utxo.one","secret":"^3$o#t=|kh)ZC","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []

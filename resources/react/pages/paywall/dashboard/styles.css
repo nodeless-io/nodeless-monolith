@@ -1,0 +1,21 @@
+.donation_page_image_container {
+  width: 80%;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .donation-page-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .donation_page_image_container {
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    margin: unset;
+    margin-right: 50px;
+  }
+}

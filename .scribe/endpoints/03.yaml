@@ -1,0 +1,329 @@
+name: 'Store Webhooks'
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/store/{id}/webhook'
+    metadata:
+      groupName: 'Store Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Store Webhooks'
+      description: 'Displays a list of webhooks belonging to the store.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":null,"url":"https:\/\/utxo.one","secret":"3J^Rh9SG9XbPB=#Ez|","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null},{"id":null,"url":"https:\/\/utxo.one","secret":"}wQ(k?OEfU","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}],"links":{"first":"\/?page=1","last":"\/?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"\/?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"\/","per_page":15,"to":2,"total":2}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/store/{id}/webhook'
+    metadata:
+      groupName: 'Store Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create Store Webhook'
+      description: 'Creates a store webhook.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      type:
+        name: type
+        description: 'Must be one of <code>store</code>, <code>donation_page</code>, <code>paywall</code>, or <code>inbox</code>.'
+        required: true
+        example: store
+        type: string
+        custom: []
+      url:
+        name: url
+        description: 'Must be a valid URL.'
+        required: true
+        example: 'http://www.walsh.com/dolorum-voluptates-aspernatur-dolor-voluptatem'
+        type: string
+        custom: []
+      events:
+        name: events
+        description: 'Must be one of <code>new</code>, <code>pending_confirmation</code>, <code>paid</code>, <code>overpaid</code>, <code>underpaid</code>, <code>in_flight</code>, <code>expired</code>, or <code>cancelled</code>.'
+        required: true
+        example:
+          - new
+        type: 'string[]'
+        custom: []
+      secret:
+        name: secret
+        description: ''
+        required: true
+        example: reprehenderit
+        type: string
+        custom: []
+      status:
+        name: status
+        description: 'Must be one of <code>active</code> or <code>inactive</code>.'
+        required: true
+        example: inactive
+        type: string
+        custom: []
+    cleanBodyParameters:
+      type: store
+      url: 'http://www.walsh.com/dolorum-voluptates-aspernatur-dolor-voluptatem'
+      events:
+        - new
+      secret: reprehenderit
+      status: inactive
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/store/{id}/webhook/{webhookId}'
+    metadata:
+      groupName: 'Store Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Store Webhook'
+      description: "Displays a store webhook's details."
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+      webhookId:
+        name: webhookId
+        description: ''
+        required: true
+        example: enim
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+      webhookId: enim
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":null,"url":"https:\/\/utxo.one","secret":"A~|V6*vw","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/store/{id}/webhook/{webhookId}'
+    metadata:
+      groupName: 'Store Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete Store Webhook'
+      description: 'Deletes a store webhook.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+      webhookId:
+        name: webhookId
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+      webhookId: et
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":null,"url":"https:\/\/utxo.one","secret":"rlz0]<m`","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/v1/store/{id}/webhook/{webhookId}'
+    metadata:
+      groupName: 'Store Webhooks'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Store Webhook'
+      description: 'Updates a store webhook.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+      webhookId:
+        name: webhookId
+        description: ''
+        required: true
+        example: dolore
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+      webhookId: dolore
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      url:
+        name: url
+        description: 'Must be a valid URL.'
+        required: true
+        example: 'http://www.robel.com/'
+        type: string
+        custom: []
+      events:
+        name: events
+        description: 'Must be one of <code>new</code>, <code>pending_confirmation</code>, <code>paid</code>, <code>overpaid</code>, <code>underpaid</code>, <code>in_flight</code>, <code>expired</code>, or <code>cancelled</code>.'
+        required: true
+        example:
+          - pending_confirmation
+        type: 'string[]'
+        custom: []
+      status:
+        name: status
+        description: 'Must be one of <code>active</code> or <code>inactive</code>.'
+        required: true
+        example: inactive
+        type: string
+        custom: []
+    cleanBodyParameters:
+      url: 'http://www.robel.com/'
+      events:
+        - pending_confirmation
+      status: inactive
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":null,"url":"https:\/\/utxo.one","secret":"M9\\2GZ~HC2c:","status":"active","events":["new","pending_confirmation","paid","expired","cancelled","underpaid","overpaid","in_flight"],"createdAt":null,"lastDeliveryAt":null}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []

@@ -1,0 +1,99 @@
+name: Transactions
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/transaction
+    metadata:
+      groupName: Transactions
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get All Transactions'
+      description: 'Returns a paginated list of transactions for this user.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      isFee:
+        name: isFee
+        description: 'If true, only returns transactions that are fees.'
+        required: false
+        example: false
+        type: boolean
+        custom: []
+    cleanQueryParameters:
+      isFee: false
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":"3bd3aab1-fbf8-49cf-a400-08bd54d0d2c2","transactable_type":"Donation","transactable":{"id":1,"uuid":"11becf5a-fb6f-4360-a506-26e375a05b23","donation_page_id":1,"amount":5000,"amount_paid":5000,"name":"anonymous","message":null,"status":"paid","type":"lightning","metadata":null,"created_at":"2023-03-15T01:11:13.000000Z","updated_at":"2023-03-15T01:11:36.000000Z","paid_at":"2023-03-15 01:11:36"},"amount":5000,"type":"credit","status":"settled","created_at":"2023-03-15T01:11:35.000000Z","updated_at":"2023-03-15T01:11:35.000000Z","is_fee":false},{"id":"3bd3aab1-fbf8-49cf-a400-08bd54d0d2c2","transactable_type":"Donation","transactable":{"id":1,"uuid":"11becf5a-fb6f-4360-a506-26e375a05b23","donation_page_id":1,"amount":5000,"amount_paid":5000,"name":"anonymous","message":null,"status":"paid","type":"lightning","metadata":null,"created_at":"2023-03-15T01:11:13.000000Z","updated_at":"2023-03-15T01:11:36.000000Z","paid_at":"2023-03-15 01:11:36"},"amount":5000,"type":"credit","status":"settled","created_at":"2023-03-15T01:11:35.000000Z","updated_at":"2023-03-15T01:11:35.000000Z","is_fee":false}],"links":{"first":"\/?page=1","last":"\/?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"\/?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"\/","per_page":15,"to":2,"total":2}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/transaction/{id}'
+    metadata:
+      groupName: Transactions
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Transaction'
+      description: 'Returns a single transaction.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The id of the transaction.'
+        required: true
+        example: 2cas07-0c8n70n923-72c93-c2389
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 2cas07-0c8n70n923-72c93-c2389
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"3bd3aab1-fbf8-49cf-a400-08bd54d0d2c2","transactable_type":"Donation","transactable":{"id":1,"uuid":"11becf5a-fb6f-4360-a506-26e375a05b23","donation_page_id":1,"amount":5000,"amount_paid":5000,"name":"anonymous","message":null,"status":"paid","type":"lightning","metadata":null,"created_at":"2023-03-15T01:11:13.000000Z","updated_at":"2023-03-15T01:11:36.000000Z","paid_at":"2023-03-15 01:11:36"},"amount":5000,"type":"credit","status":"settled","created_at":"2023-03-15T01:11:35.000000Z","updated_at":"2023-03-15T01:11:35.000000Z","is_fee":false}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []

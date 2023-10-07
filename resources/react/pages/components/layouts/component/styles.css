@@ -1,0 +1,38 @@
+.nav-link {
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 15px;
+  line-height: 24px;
+  display: block;
+  color: #6b7280;
+}
+
+.nav-link:hover {
+  color: #ff5a1f;
+}
+
+.navbar-link {
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 15px;
+    line-height: 24px;
+    display: block;
+    color: #6b7280;
+  }
+
+  .navbar-link:hover {
+    color: #ff5a1f;
+  }
+
+@media (min-width: 600px) {
+  .nav-link {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 900px) {
+  .nav-link {
+    display: block;
+  }
+}

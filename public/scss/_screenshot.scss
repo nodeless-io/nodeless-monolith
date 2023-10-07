@@ -1,0 +1,197 @@
+/*================= app_screenshot_area css =============*/
+.app_screenshot_area{
+    overflow: hidden;
+    .app_screen_info{
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: -10px;
+    }
+    .app_screenshot_slider{
+        .item{
+            padding: 10px 20px 20px;
+            .screenshot_img{
+                border: 1px solid #f4f4f9;
+                border-radius: 4px;
+                box-shadow: 0px 6px 16px 0px rgba(12, 0, 46, 0.06);
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        .owl-dots{
+            margin-top: 40px;
+            .owl-dot{
+                span{
+                    background: #cfcfe7;
+                    border: 0px;
+                }
+                &.active{
+                    span{
+                        background: #653cee;
+                    }
+                }
+            } 
+        } 
+        .owl-prev,.owl-next{
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #d9e1ea;
+            background: #fbfbfd;
+            border-radius: 25px;
+            font-size: 20px;
+            line-height: 50px;
+            transform: translateX(-50%);
+            cursor: pointer;
+            transition: all 0.2s linear;
+            &:hover{
+                background: #4069eb;
+                border-color: #4069eb;
+                color: #fff;
+            }
+        }
+        .owl-prev{
+            left: calc(50% - 60px);
+        }
+        .owl-next{
+            right: calc(50% - 60px);
+        }
+    }
+}
+/*================= app_screenshot_area css =============*/
+
+/*=============== get started area css ===============*/
+.get_started_area{
+    background-image: linear-gradient( 140deg, rgb(103,45,222) 0%, rgb(64,105,235) 100%);
+    padding: 120px 0px 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .shap{
+        opacity: 0.03;
+        &.one{
+            background: rgb(255, 255, 255);
+            top: -290px;
+            left: -50px;
+        }
+        &.two{
+            background: rgb(255, 255, 255);
+            top: -260px;
+            left: 100px;
+        }
+        &.three{
+            background: rgb(255, 255, 255);
+            top: auto;
+            left: 47%;
+            bottom: -300px;
+        }
+        &.four{
+            background: rgb(255, 255, 255);
+            top: auto;
+            left: 63%;
+            bottom: -280px;
+        }
+    }
+}
+.get_content{
+    h3{
+        font-size: 24px;
+        color: #fff;
+    }
+    h2,p{
+        color: #fff;
+    }
+    .app_btn{
+        font: 500 16px $pop;
+        padding: 12px 34px;
+        border-color: #fff;
+        background: #fff;
+        line-height: 27px;
+        transition: all 0.2s linear;
+        min-width: 200px;
+        text-align: center;
+        &.app_btn_one{
+            color: #4069eb;
+            vertical-align: middle;
+            img{
+                padding-right: 12px;
+            }
+            &:hover{
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff;
+            }
+        }
+        &.app_btn_two{
+            background: rgba(255, 255, 255, 0.1);
+            vertical-align: middle;
+            box-shadow: none;
+            margin-left: 20px;
+            i{
+                font-size: 25px;
+                padding-right: 10px;
+                vertical-align: sub;
+            }
+            &:hover{
+                color: #4069eb;
+                background:#fff;
+                box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+            }
+        }
+    }
+}
+
+
+/*============ get_started_three css ============*/
+.get_started_three{
+    .startup_tab_img{
+        .web_img,.phone_img{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    .get_btn_info{
+        margin-top: 50px;
+        .get_btn_item{
+            display: flex;
+            align-items: center;
+            padding-right: 110px;
+            position: relative;
+            flex-wrap: wrap;
+            .get_icon{
+                height: 100px;
+                width: 100px;
+                line-height: 100px;
+                font-size: 45px;
+                text-align: center;
+                border-radius: 3px;
+                background: #fff1f3;
+                color: #ff738b;
+                margin-right: 25px;
+            }
+            h3{
+                font-size: 20px;
+                line-height: 34px;
+                color: #051441;
+                font-weight: 400;
+                flex: 1;
+            }
+            .icon_two{
+                background: #f1f5ff;
+                .small{
+                    color: #46d779;
+                    font-size: 25px;
+                    position: relative;
+                    top: -25px;
+                    left: 6px;
+                    padding-top: 0;
+                }
+                i{
+                    color: #73a1ff;
+                    padding-top: 30px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

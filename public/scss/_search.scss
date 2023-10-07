@@ -1,0 +1,205 @@
+/*============= search_boxs css =================*/
+.search_boxs{
+	z-index: 20000;
+	position: fixed;
+	top: -105%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		background: rgba(27, 29, 34, 0.95);
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+		border-radius: 100%;
+		transform: scale(0.04), translateY(9999px);
+		overflow: hidden;
+	}
+	.close_icon{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		font-size: 30px;
+		color: #fff;
+		cursor: pointer;
+		backface-visibility: hidden;
+		transition: transform 0.2s ease-out, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+		opacity: 0;
+	}
+	.input-group{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: scale(0.50);
+		transform: translateX(-50%) translateY(-50%);
+		max-width: 800px;
+		width: 20%;
+		opacity: 0;
+		transition: all 900ms linear;
+		transition-delay: 0.75s;
+		input{
+			border: none;
+			height: 55px;
+			padding: 0px 15px;
+			font-size: 16px;
+			padding-left: 0px;
+            width: 100%;
+			color: #fff;
+			background: transparent;
+			border-bottom: 2px solid rgba(255, 255, 255, 0.60);
+			border-radius: 0px;
+            outline: none;
+			@include placeholder{
+				font-size: 16px;
+				color: rgba(255, 255, 255, 0.60);
+			}
+		}
+		.input-group-append{
+			margin-left: 0px;
+			position: absolute;
+			right: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			z-index: 4;
+			button{
+				border: none;
+				background: transparent;
+				border-radius: 0px;
+				height: 55px;
+				border-bottom-left-radius: 0px;
+				border-top-left-radius: 0px;
+				color: rgba(255, 255, 255, 0.60);
+				font-size: 24px;
+				padding: 0px;
+				font-family: $pop;
+				outline: none !important;
+				box-shadow: none !important;
+				cursor: pointer;
+				i{
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+input[type="text"]{
+    -webkit-appearance: none; 
+    outline: none; 
+}
+.open{
+	.search_boxs{
+		top: 0px;
+		&:before{
+			animation: menu-animation 0.8s ease-out forwards;
+			height: 100%;
+		}
+		.close_icon{
+			transition-delay: 0.75s;
+			opacity: 1;
+		}
+		.input-group{
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}
+
+
+
+/* Css keyframes css
+============================================================================================ */
+@-webkit-keyframes menu-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.04) translateY(300%);
+    transform: scale(0.04) translateY(300%);
+  }
+  40% {
+    -webkit-transform: scale(0.04) translateY(0);
+    transform: scale(0.04) translateY(0);
+    -webkit-transition: ease-out;
+    -o-transition: ease-out;
+    transition: ease-out;
+  }
+  40% {
+    -webkit-transform: scale(0.04) translateY(0);
+    transform: scale(0.04) translateY(0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(0.02) translateY(0px);
+    transform: scale(0.02) translateY(0px);
+  }
+  61% {
+    -webkit-transform: scale(0.04);
+    transform: scale(0.04);
+  }
+  99.9% {
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 100%;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    height: 100%;
+    padding-bottom: 0;
+    border-radius: 0;
+  }
+}
+
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.04) translateY(300%);
+    transform: scale(0.04) translateY(300%);
+  }
+  40% {
+    -webkit-transform: scale(0.04) translateY(0);
+    transform: scale(0.04) translateY(0);
+    -webkit-transition: ease-out;
+    -o-transition: ease-out;
+    transition: ease-out;
+  }
+  40% {
+    -webkit-transform: scale(0.04) translateY(0);
+    transform: scale(0.04) translateY(0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(0.02) translateY(0px);
+    transform: scale(0.02) translateY(0px);
+  }
+  61% {
+    -webkit-transform: scale(0.04);
+    transform: scale(0.04);
+  }
+  99.9% {
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 100%;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    height: 100%;
+    padding-bottom: 0;
+    border-radius: 0;
+  }
+}
+
+/* End Css keyframes css
+============================================================================================ */

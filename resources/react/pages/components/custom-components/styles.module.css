@@ -1,0 +1,30 @@
+.input-border {
+  border-color: #e5e7eb !important;
+}
+
+.error-input-border {
+  border-color: #e02424 !important;
+}
+
+.input {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #6b7280;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+  font-size: "13px";
+  font-weight: 400;
+}
+
+.inputLabel {
+  color: #6b7280 !important;
+}
+
+.helper-text {
+  text-transform: initial;
+  font-size: 1rem !important;
+}

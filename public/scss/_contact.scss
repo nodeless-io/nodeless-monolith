@@ -1,0 +1,600 @@
+/*================= map_area  ====================*/
+.map_area{
+    height: 552px;
+    position: relative;
+    iframe{
+        height: 100%;
+        width: 100%;
+        border: 0px;
+        pointer-events: none;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+.app_contact_info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 600px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 40px 50px 0px rgba(12, 0, 46, 0.2);
+    padding: 45px 45px 15px;
+    .triangle{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 55px;
+        background: #fff;
+        bottom: -7px;
+        transform: rotate(45deg);
+    }
+    .info_item{
+        padding-left: 55px;
+        position: relative;
+        margin-bottom: 35px;
+        i{
+            position: absolute;
+            left: 0;
+            font-size: 30px;
+            color: #5e2ced;
+            background-image: linear-gradient(0deg, #5e2ced 0%, #a485fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            top: 0px;
+            left: 0;
+        }
+        h6{
+            color: #051441;
+            margin-bottom: 5px;
+        }
+        p,a{
+            color: #677294;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+        a{
+            &:hover{
+                color: #4069eb;
+            }
+        }
+    }
+}
+
+
+/*================== contact_info_area css ================*/
+.contact_info_area{
+}
+.contact_info_item{
+    border-bottom: 1px solid #eeebf6;
+    padding-bottom: 25px;
+    p{
+        color: #677294;
+        margin-bottom: 8px;
+    }
+    a{
+        color: #677294;
+        padding-left: 3px;
+        display: inline-block;
+        &:hover{
+            color: #5e2ced;
+        }
+    }
+    & + .contact_info_item{
+        border: 0px;
+        margin-top: 33px;
+    }
+}
+.mapbox{
+    height: 400px;
+    box-shadow: 0px 3px 4px 0px rgba(12, 0, 46, 0.05);
+    border: 10px solid #fff;
+}
+#mapBox{
+    height: 100% !important;
+}
+
+.text_box{
+    margin-bottom: 30px;
+    input[type="text"],textarea,input[type="password"],input[type="email"]{
+        font: 400 15px/60px $pop;
+        color: #222d39;
+        height: 60px;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+        width: 100%;
+        border: 1px solid #fff;
+        padding-left: 30px;
+        @include placeholder{
+            color: #9ca3b9;
+        }
+        &:focus{
+            border-color: rgb(242, 239, 252);
+            box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
+            outline: none;
+        }
+    }
+    textarea{
+        height: 220px;
+    }
+}
+.contact_form_box{
+    .btn_three{
+        min-width: 180px;
+        text-align: center;
+        background: #5e2ced;
+        border-color: #5e2ced;
+        margin-top: 0px;
+        &:hover{
+            background: transparent;
+            color: #5e2ced;
+        }
+    }
+}
+
+.mapbox2{
+    height: 440px;
+    border-top: 10px solid #fff;
+}
+
+
+/*============= login_area css =============*/
+.login_area{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .login_info{
+        padding: 160px 100px 160px 0px;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 2500px;
+            right: 0;
+            height: 100%;
+            background: #fbfbfb;
+            top:0;
+            z-index: -1;
+        }
+        p{
+            a{
+                color: #677294;
+            }
+        }
+    }
+}
+.login-form{
+    .text_box{
+        .text_c{
+            color: #161341;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        input[type="password"]{
+            padding-top: 8px;
+            line-height: 50px;
+            &:focus{
+                padding-top: 0px;
+            }
+        }
+    }
+    .extra{
+        display: flex;
+        justify-content: space-between;
+        font: 400 14px/30px $pop;
+        margin-top: 45px;
+        .checkbox{
+            label{
+                margin-bottom: 0px;
+                color: #161341;
+            }
+            input[type="checkbox"]{
+                position: relative;
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+                &:before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    top: 0;
+                    left: 0;
+                    border: 1px solid #7348ef;
+                    border-radius: 2px;
+                    background-color: white;
+                }
+                &:checked:after{
+                    content: "";
+                    display: block;
+                    width: 4px;
+                    height: 8px;
+                    border: solid #7348ef;
+                    border-width: 0 2px 2px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 0px;
+                    left: 3px;
+                }
+            }
+        }
+        .forgotten-password{
+            a{
+                color: #677294;
+            }
+        }
+    }
+    .btn_three{
+        width: 100%;
+        background: #5e2ced;
+        color: #fff;
+        margin-top: 40px;
+        &:hover{
+            box-shadow: 0px 20px 30px 0px rgba(61, 100, 244, 0.16);
+        }
+    }
+    .alter-login{
+        font: 400 15px/26px $pop;
+        color: #9ca3b9;
+        a{
+            color: #5e2ced;
+            display: inline-block;
+            margin-left: 6px;
+        }
+    }
+}
+.login_img{
+    padding-left: 100px;
+    margin-right: -250px;
+    img{
+        max-width: 100%;
+    }
+}
+
+
+/*==================== sign_in_area css ==================*/
+.sign_in_area{}
+.sign_info{
+    border: 20px solid #fff;
+    background: #fbfbfd;
+    padding: 80px 50px;
+    box-shadow: 0px 50px 100px 0px rgba(12, 0, 46, 0.05);
+    .login_info{
+        padding-left: 30px;
+    }
+    .sign_info_content{
+        h2{
+            font-size: 30px;
+            color: #677294;
+        }
+        ul{
+            li{
+                font: 400 16px/34px $pop;
+                color: #677294;
+                i{
+                    color: #5e2ced;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .login-form .text_box{
+        margin-bottom: 25px;
+    }
+    .lead-text{
+        font: 400 14px/40px $pop;
+        color: #677294;
+        padding-right: 20px;
+    }
+    .social_tag{
+        li{
+            display: inline-block;
+            a{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: block;
+                line-height: 44px;
+                color: #fff;
+                font-size: 13px;
+                text-align: center;
+                margin-left: 7px;
+            }
+            &:first-child{
+                a{
+                    background: #4779de;
+                }
+            }
+            &:nth-child(2){
+                a{
+                    background: #e43e30;
+                }
+            }
+            &:nth-child(3){
+                a{
+                    background: #1da1f3;
+                }
+            }
+        }
+    }
+    .sign-in-form{
+        .btn_three {
+            width: auto;
+            margin-top: 0;
+        }
+        .extra .forgotten-password a{
+            color: #161341;
+            font-weight: 400;
+            &:hover{
+                color: #5e2ced;
+            }
+        }
+    }
+}
+.sign_btn_transparent{
+    display: inline-block;
+    background: transparent;
+    border-color: #5e2ced;
+    color: #5e2ced;
+    &:hover{
+        background: #5e2ced;
+        color: #fff;
+    }
+}
+
+
+/*============= get_quote_form css============*/
+.get_quote_form{
+    .form-group{
+        margin-bottom: 30px;
+        .form-control{
+            font: 300 15px $pop;
+            color: $p-color;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+            border: 1px solid transparent;
+            height: 60px;
+            padding: 0px 30px;
+            @include placeholder{
+                color: #9ca3b9;
+            }
+            &:focus{
+                border-color: rgb(242, 239, 252);
+                box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
+
+            }
+        }
+        textarea{
+            &.form-control{
+                height: 210px;
+                padding-top: 15px;
+            }
+        }
+    }
+    .btn_three{
+        margin-top: 10px;
+    }
+}
+
+
+/*=========== comingsoon css ============*/
+.saasland_container{
+    height: 100vh;
+    width: 100%;
+    min-height: 600px;
+    background: #fbfbfd;
+    display: flex;
+    flex-wrap: wrap;  
+    .saasland_bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+    .saasland_col_content{
+        position: relative;
+        width: 40%;
+        .container_wrap{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 35px;
+            z-index: 3;
+            overflow: hidden;
+            min-height: 600px;
+        }
+        .saasland_log{
+            left: 21%;
+            position: absolute;
+            width: 70%;
+            top: 100px;
+        }
+        .saasland_content{
+            display: block;
+            position: absolute;
+            left: 21%;
+            top: calc(50% - 150px);
+            width: 70%;
+            h2{
+                font-size: 30px;
+                font-family: $pop;
+                color: #747d99;
+                margin-bottom: 30px;
+                font-weight: 400;
+                font-style: italic;
+            }
+            h1{
+                color: $h_dk;
+                font-size: 50px;
+                font-weight: 600;
+                margin-bottom: 60px;
+            }
+            .car_theme_btn{
+                font-family: $pop;
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+        }
+        .saasland_bottom{
+            bottom: 25px;
+            left: 21%;
+            position: absolute;
+            width: 70%;
+            font: 400 12px/40px $pop;
+            color: #7f88a6;
+            a{
+                color: #6754e2;
+            }
+        }
+    }
+} 
+.saasland_col_screen{
+    background-image: linear-gradient( -120deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    width: 60%;
+    position: relative;
+    z-index: 1;
+    .clock{
+        position: absolute;
+        bottom: 190px;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        .timer{
+            display: inline-block;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.40);
+            border-radius: 5px;
+            padding: 20px 30px;
+            margin: 0px 8px;
+            span{
+                font-size: 50px;
+                font-weight: 500;
+                line-height: 50px;
+            }
+            .smalltext{
+                font-size: 18px;
+            }
+        }
+    }
+    .saasland_social{
+        bottom: 25px;
+        left: 70px;
+        position: absolute;
+        z-index: 1;
+        p{
+            margin-bottom: 0px;
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+        }
+        ul{
+            display: inline-block;
+            padding-left: 0;
+            li{
+                display: inline-block;
+                a{
+                    font-size: 14px;
+                    color: #fff;
+                    padding: 0px 5px;
+                    transition: color 0.4s linear;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#success, #error {
+    position: relative;
+    top: 10px;
+    display: block;
+    right: 0;
+    left: 0;
+    bottom: -15px;
+    display: none;
+    font-weight: 600;
+
+}
+
+#success {
+  color: lawngreen;
+}
+#error {
+  color: orangered;
+}
+
+
+/*=============== seo_subscribe_area css ============*/
+.seo_subscribe_area{
+    background-color: rgb(94, 44, 237);
+    padding: 120px 0px 150px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .seo_sec_title{
+        h2,p{
+            color: #fff;
+        }
+    }
+    .overlay_img{
+        background: url("../img/seo/cloud_bg.png") no-repeat scroll center 0 / cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .cloud_img{
+        position: absolute;
+        right: 0;
+        bottom: -7px;
+        width: 300px;
+        height: 250px;
+    }
+}
+.seo_subscribe_form{
+    max-width: 970px;
+    margin: 0 auto;
+    .input-group{
+        padding: 0px 10px;
+        input{
+            font-size: 16px;
+            line-height: 58px;
+            font-weight: 300;
+            border-radius: 4px;
+            padding: 2px 30px 0px;
+        }
+        .form-control{
+            max-width: 400px;
+            color: #949db5;
+            background: #fff;
+            border: 0px;
+            box-shadow: none;
+            @include placeholder{
+                color: #949db5;
+            }
+        }
+        .check-btn{
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: rgb(0, 201, 156);
+            border: 0px;
+            box-shadow: 0px 10px 30px 0px rgba(18, 2, 86, 0.2);
+            transition: all 0.3s linear;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                box-shadow: none;
+            }
+        }
+    }
+}
+/*=============== seo_subscribe_area css ============*/

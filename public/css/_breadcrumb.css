@@ -1,0 +1,282 @@
+/*================= Start breadcrumb_area css =================*/
+.breadcrumb_area {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(94, 44, 237)), to(rgb(164, 133, 253)));
+  background-image: linear-gradient(180deg, rgb(94, 44, 237) 0%, rgb(164, 133, 253) 100%);
+  position: relative;
+  z-index: 1;
+  padding: 235px 0px 125px;
+  overflow: hidden;
+}
+.breadcrumb_area .breadcrumb_shap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/*================= End breadcrumb_area css =================*/
+/*================= Start breadcrumb_area_two css =================*/
+.breadcrumb_area_two {
+  background: #f8f6fe;
+  position: relative;
+  padding: 235px 0px 125px;
+  z-index: 1;
+}
+.breadcrumb_area_two .breadcrumb_shap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.breadcrumb_area_two .bubble li {
+  background: #5e2ced;
+  opacity: 0.1;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+}
+.breadcrumb_area_two .bubble li:nth-child(1) {
+  left: 220px;
+  bottom: 50px;
+  -webkit-animation: spin3 2s infinite alternate;
+          animation: spin3 2s infinite alternate;
+}
+.breadcrumb_area_two .bubble li:nth-child(2) {
+  left: 35%;
+  top: 100px;
+  -webkit-animation: spin 2s infinite alternate;
+          animation: spin 2s infinite alternate;
+}
+.breadcrumb_area_two .bubble li:nth-child(3) {
+  left: 40%;
+  width: 51px;
+  height: 51px;
+  bottom: 50px;
+  -webkit-animation: spin1 3s infinite alternate;
+          animation: spin1 3s infinite alternate;
+}
+.breadcrumb_area_two .bubble li:nth-child(4) {
+  left: 42%;
+  bottom: 50px;
+  width: 20px;
+  height: 20px;
+}
+.breadcrumb_area_two .bubble li:nth-child(5) {
+  left: 76%;
+  width: 51px;
+  height: 51px;
+  top: 160px;
+  -webkit-animation: spin1 3s infinite alternate;
+          animation: spin1 3s infinite alternate;
+}
+.breadcrumb_area_two .bubble li:nth-child(6) {
+  left: 75%;
+  width: 30px;
+  height: 30px;
+  top: 186px;
+}
+.breadcrumb_area_two .bubble li:nth-child(7) {
+  left: 52%;
+  top: 150px;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin2 2s infinite alternate;
+          animation: spin2 2s infinite alternate;
+}
+.breadcrumb_area_two .bubble li:nth-child(8) {
+  left: 90%;
+  top: 250px;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin2 2s infinite alternate;
+          animation: spin2 2s infinite alternate;
+}
+
+.breadcrumb_content_two h1 {
+  color: #222d39;
+  margin-bottom: 12px;
+}
+.breadcrumb_content_two .breadcrumb {
+  background: transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.breadcrumb_content_two .breadcrumb li {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  position: relative;
+  color: #525c7c;
+}
+.breadcrumb_content_two .breadcrumb li a {
+  color: #051441;
+}
+.breadcrumb_content_two .breadcrumb li + li {
+  padding-left: 32px;
+}
+.breadcrumb_content_two .breadcrumb li + li:after {
+  content: "\e649";
+  font-family: "themify";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  font-size: 14px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translateX(-10px) scale(0.9);
+            transform: translateX(-10px) scale(0.9);
+  }
+  100% {
+    -webkit-transform: translateX(30px) scale(1.3) translateY(10px);
+            transform: translateX(30px) scale(1.3) translateY(10px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: translateX(-10px) scale(0.9);
+            transform: translateX(-10px) scale(0.9);
+  }
+  100% {
+    -webkit-transform: translateX(30px) scale(1.3) translateY(10px);
+            transform: translateX(30px) scale(1.3) translateY(10px);
+  }
+}
+@-webkit-keyframes spin1 {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes spin1 {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+@keyframes spin2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+@-webkit-keyframes spin3 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+@keyframes spin3 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+/*================= End breadcrumb_area_two css =================*/
+/*========= blog_breadcrumb_area css ========*/
+.blog_breadcrumb_area {
+  position: relative;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+.blog_breadcrumb_area .background_overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(-140deg, rgb(94, 44, 237) 0%, rgb(128, 55, 218) 100%);
+  opacity: 0.9;
+  z-index: -1;
+  top: 0;
+}
+.blog_breadcrumb_area .breadcrumb_content_two {
+  color: #fff;
+  padding-top: 80px;
+}
+.blog_breadcrumb_area .breadcrumb_content_two h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.blog_breadcrumb_area .breadcrumb_content_two h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.blog_breadcrumb_area .breadcrumb_content_two ol {
+  margin-bottom: 0;
+}
+.blog_breadcrumb_area .breadcrumb_content_two ol li {
+  display: inline-block;
+  font-size: 16px;
+}
+.blog_breadcrumb_area .breadcrumb_content_two ol li + li:before {
+  content: "\e649";
+  display: inline-block;
+  font-family: "themify";
+  font-size: 10px;
+  margin: 0px 5px 0px 3px;
+}
+
+/*========= blog_breadcrumb_area css ========*/

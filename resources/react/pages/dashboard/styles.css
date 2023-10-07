@@ -1,0 +1,48 @@
+.chart-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.chart-container-section-one {
+  width: 55%;
+  background: #f3f4f6;
+  padding: 40px;
+}
+
+.chart-container-section-two {
+  width: 45%;
+  background: linear-gradient(45.6deg, #911f8e -4.64%, #fd7014 110.27%);
+  padding: 20px;
+}
+
+.activity-image-icon {
+  background: #f3f4f6;
+}
+
+@media only screen and (max-width: 600px) {
+  .chart-container {
+    width: 100%;
+    display: block;
+    justify-content: unset;
+    flex-direction: unset;
+    margin-top: -30px;
+  }
+
+  .chart-container-section-one {
+    width: 100%;
+    padding: 30px 15px 10px 15px;
+  }
+
+  .chart-container-section-two {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .carousel-icon {
+    width: 150px;
+    height: 100%;
+    margin-top: 40px;
+  }
+}

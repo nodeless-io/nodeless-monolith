@@ -1,0 +1,210 @@
+name: 'Store Invoices'
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/store/{id}/invoice'
+    metadata:
+      groupName: 'Store Invoices'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create Store Invoice'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      amount:
+        name: amount
+        description: 'The amount of the invoice.'
+        required: true
+        example: 100.5
+        type: number
+        custom: []
+      currency:
+        name: currency
+        description: 'The currency of the invoice. Must be one of <code>usd</code>, <code>eur</code>, <code>cad</code>, <code>jpy</code>, <code>gbp</code>, <code>chf</code>, <code>btc</code>, <code>sats</code>, <code>USD</code>, <code>EUR</code>, <code>CAD</code>, <code>JPY</code>, <code>GBP</code>, <code>CHF</code>, <code>BTC</code>, or <code>SATS</code>.'
+        required: true
+        example: USD
+        type: string
+        custom: []
+      buyerEmail:
+        name: buyerEmail
+        description: 'The email of the buyer. Must be a valid email address.'
+        required: false
+        example: jennyfer15@example.org
+        type: string
+        custom: []
+      redirectUrl:
+        name: redirectUrl
+        description: 'The redirect url of the invoice. Must be a valid URL.'
+        required: false
+        example: 'http://www.wiegand.info/dicta-dicta-est-perspiciatis-reprehenderit-nemo'
+        type: string
+        custom: []
+      metadata:
+        name: metadata
+        description: 'The metadata of the invoice.'
+        required: false
+        example:
+          key: value
+        type: object
+        custom: []
+    cleanBodyParameters:
+      amount: 100.5
+      currency: USD
+      buyerEmail: jennyfer15@example.org
+      redirectUrl: 'http://www.wiegand.info/dicta-dicta-est-perspiciatis-reprehenderit-nemo'
+      metadata:
+        key: value
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"0535e71b-8ab6-40e7-b67a-9f6e7c792276","checkoutLink":"http:\/\/localhost\/checkout\/0535e71b-8ab6-40e7-b67a-9f6e7c792276","satsAmount":68174,"status":"in_flight","buyerEmail":"sydney73@keebler.com","redirectUrl":"http:\/\/www.osinski.info\/dicta-rerum-deleniti-perferendis-ullam-neque-numquam","metadata":{"user_id":433,"order_id":298},"createdAt":"2023-05-01T15:32:33.000000Z","paidAt":null,"onchainAddress":"tb1pxk7g48w8ln9g4fzfh4kcny3hqn8xp3wjnduy5g87vk006mvd4puq6kt8el","lightningInvoice":"lntb681740n1pjylkujpp52v7cxznsyjurdlm4xdcns4vvlk9d4l5paj0guuwkhh0cs4pvrluqdz42d6x7un9f9h8vmmfvdjjqj2y8gsrqdfnx4jnwvtz95uxzc3k956rqefh943rvdmp95ukvdn9xa3nwwfjxgmnvcqzpgxqzfvsp54q2pzmdla7tatm4t59k9chwd6dudhmw27c2pqn7a0yu9m2f6rn6s9qyyssqxkuh3hljgnuhe25kneksyzslr2xf4reqvgd7kcnmv748v4dn6zw8p5rljvxkk6zp6ajhsyukc9e54dkrnjv5xxxuxag9auh47kdyqngqqenp4g","store":{"id":"909dbae0-9322-4e04-b304-d5c53af291ae","name":"Cremin-Hansen","url":"http:\/\/beer.net\/","email":"bwuckert@murphy.com","createdAt":"2023-05-01T15:32:33.000000Z"},"qrCodes":{"unified":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZUAAAGVCAIAAAC5OftsAAAABnRSTlMA\/wD\/AP83WBt9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAPgklEQVR4nO3dyZIdIQ4F0K4O\/\/8vu\/e5wEEjCa59zrZeDm+oG4Qgxc\/v37\/\/AxDov7dvAOD\/JL+AVPILSCW\/gFTyC0glv4BU8gtIJb+AVPILSCW\/gFTyC0glv4BU8gtIJb+AVPILSCW\/gFTyC0glv4BU8gtI9evk4J+fn6r7WDtp0v\/ITX5u4\/Pi9V\/XCo\/92LrJsb+ub3Lt1ue8ZesX2\/ere+QfZ834C0glv4BU8gtIJb+AVEf1+4\/Ciua6dnhSWeyrHBeWmT8Kb2N97NaLT76jrb+elKjXTn5Itz7nwpmfvhevFc4MGH8BqeQXkEp+AankF5Cqsn7\/MVbg3LqNvpmBj8KCfWEBe+vT2NJ3k4V\/\/Shcf1\/4Bj9OLhTxkMAJ4y8glfwCUskvIJX8AlI11u\/7jPWi2XKyHP9kafvYMwNjXW7Geu+c3PPJd5TYeuhNxl9AKvkFpJJfQCr5BaSKrN\/fah5fWFYvrLL3raEv7Pj+5vr7E4VV9sIOSCc\/wsRyvvEXkEp+AankF5BKfgGpfsaKsoVnLixwbh275Vbxe33sx1hX\/vWxt168PvaWvs48j+zXW3hm4y8glfwCUskvIJX8AlJVrr+\/Vf4cq+6P9Tnpq7P23dXYO0r8rArnoz4K2wcV9uwfY\/wFpJJfQCr5BaSSX0Cqo\/r9rYYbY0X39XVP3NqEdX3sm614+h7G6NNXVi98v7f2vi1k\/AWkkl9AKvkFpJJfQKrK\/jkn+oqUY31sxvaCPdHXm2XrulsK9woYc6sHziO7F\/dtpPBh\/AWkkl9AKvkFpJJfQKrK9fd9tcO1sf7ohVXJvnL+rT7lhYXzxMcATm7j5NitrXDHvtCxWRTjLyCV\/AJSyS8glfwCUjXuXzu2iHzL2D33rXXe0nfdN7c7eKQt\/YnCL2XsG7y1M67xF5BKfgGp5BeQSn4BqRrr91svfrNiXdgw5+Qm18eOdeW\/1S8oopHLlr4tlreMFd0LH7b5MP4CUskvIJX8AlLJLyDVUf3+e6436tknx\/YVdB\/pF7Q2thlCYfV3fea+eYP1i8f0\/eNsudXxyfgLSCW\/gFTyC0glv4BUlfX776kvLbgvXK\/cd6qPxEXVW2f+GOtj09f\/fn2h9bF981FrtzZS6GP8BaSSX0Aq+QWkkl9Aqsb6\/Ylba53\/vp4wY+uzb80bRPTs3zK2KcHYFg365wB8yS8glfwCUskvIFVl\/\/sTjzS8P9G3Or\/Pm1MQa4UTBY9M16yNbWe79sjWAR\/GX0Aq+QWkkl9AKvkFpLrW\/36s9\/ZY+TOxgnvrK1tf6OPWrrprj0x9jN3k1oW2WH8P\/IvkF5BKfgGp5BeQ6tr6+7F2K7eKo1se6ZGypW8N\/ZuL9U+OfbOcf+LWhrUfxl9AKvkFpJJfQCr5BaRqrN8X1mj7Fq+vX\/zRV6LeOtWtRxc++j7JW5151m495nHrf+FE30L\/D+MvIJX8AlLJLyCV\/AJS\/So8V2HRbqz+V7gUeGxFcmGpeH2T6zOPfXR93++tZfFbL761\/v6RM68ZfwGp5BeQSn4BqeQXkKqx\/33fmuP1qbaMtQ\/qazz\/SCeTW71Zxp5z6JtkuFWSf7Mt1RbjLyCV\/AJSyS8glfwCUlXW77+nnuo2c+stFNZZx041tr3r+rpjPXD6+t\/f2tv41mbGhbdRyPgLSCW\/gFTyC0glv4BUc+vv+5ptr\/Wt3R+7jTd31X3kC+3bOLZQxOMlj3yhW4y\/gFTyC0glv4BU8gtIVdn\/\/uPNwmrfUwF9Lc\/XxrqvfNyqSd9a6t3Xamlswf2WW92Ethh\/AankF5BKfgGp5BeQqrF\/zvdKTy5u\/uhr8zLWMeZEX\/eVR9o0nXjkx9D3ez5xq9hv\/AWkkl9AKvkFpJJfQKqj9fdbRcq+quSJwoXgH30F+zcruB+PzFfcaj10a\/Pm9T\/d2tgmDIWTOcZfQCr5BaSSX0Aq+QWkquyfU1iUPamkjjW9Gdt1dav7SuHbP7mrrWP7WtOsX1zYfKZvLqvwDY59VmPPZhh\/AankF5BKfgGp5BeQqrJ+\/8gS8\/WpCiuLj2ykOrbG+uSTLKyFn7j1WfUVsB8pq5\/8p5ww\/gJSyS8glfwCUskvIFVj\/\/tHWryfrLH++z6cW7sIF1aOH+npvn5xoYj+92t9H47xF5BKfgGp5BeQSn4BqSrX36+NlWzHqr+F\/e+3jj15cWENfq2w2t3XqKewjc\/a2Ga3W7dxcqFbWyx\/GH8BqeQXkEp+AankF5DqaP19YZuXvnJvYbF\/bawmvT5V4Rfat5PAR8Qb\/BhbnT92z7f2kNb\/HvgXyS8glfwCUskvINVc\/5yPwnXSb9bCTzzSqqXwumN7\/fa59RO9NY3w5uzch\/EXkEp+AankF5BKfgGpru1f29fY5NYC5bEVyY\/UwgvruyfXHXty4+TFJ3fV96uL+F9YM\/4CUskvIJX8AlLJLyBV4\/r7QreWxb\/Zd\/9j7FR9tfCtU328uXPCX\/ClPNIhZ834C0glv4BU8gtIJb+AVI3979+sZ481gXnkrx+31u73FYPHevb3dW1au7VK\/pHdD9aMv4BU8gtIJb+AVPILSPXK+vu\/vsq+Nrb+\/tZdbXnkaYStC63duo2+3vmPbEhs\/AWkkl9AKvkFpJJfQKrG9fcfY4XGvmO3PFLgfGQX4VvN1PuqzlvH9kn8ygo\/K+MvIJX8AlLJLyCV\/AJSVa6\/76vw9U0UvPn2t\/StOL81b7Cl8HPuq8H\/fa14bm1J8WH8BaSSX0Aq+QWkkl9Aql+F5zqp4Y1t0tm33+fJWxhbGH1i667enEXpq6M\/8vhB37RJX3so\/XOAf5H8AlLJLyCV\/AJSVfbPGds49uNWJ\/JHFr739Vb\/uLVx7NZdbZ1qrLvOlsQL3ZquMf4CUskvIJX8AlLJLyDVtfp9X1PzsTLz2iNb4Y4t1i9cvP6vFbD7vu71i9f6WukXMv4CUskvIJX8AlLJLyBVZf+cW02++9bBf5w0kDn5cB4p5\/fV\/gs7L330VZ1Pfma35nY++v7LxtrhG38BqeQXkEp+AankF5Bqbv\/asd1tI9YNnyisOt9qanRrI9U3+9+fvLjQIw9jbDH+AlLJLyCV\/AJSyS8g1dH6+0d2mV2feeu6Y7XSW11u1rextvWAwZa+rX\/fXJ6+deyb2w589P021oy\/gFTyC0glv4BU8gtIdW39faG+QnKhvrXdJ8a2LDi57trYlMuWvh7262O3buORj876e+BfJL+AVPILSCW\/gFSV9fvvqaf27Dwxdt2xouzWqdb6LnRrY+C+Mz8yebU29rvS\/x7gD+QXkEp+AankF5Bqrn\/OVgnzpAq7dRtja8rHdtUt\/KzWF9ryyL65hb\/Ywn0VxuayxnZNXp9qfVdbjL+AVPILSCW\/gFTyC0h1VL\/vaxDeV4TeOvZkzuHkultnHlvLfnLdscL52tjkxtjvqu8xgLH\/wRPGX0Aq+QWkkl9AKvkFpDrqn\/Nm7+3CiuYjXX1u9Skv\/AYLP\/ZHmvRvvXisHf6WWxsaFL5B4y8glfwCUskvIJX8AlIdrb\/\/KKzS9RX8HmnGstVs56SOfqupUeE76nvMY33s1l+3XnxSOB+bRuh7rKVwRsL4C0glv4BU8gtIJb+AVJXr7wt7nH88smi+sDZ8q9nOyZkLL9S3q27hD6nwNsba\/xd++30N\/rduY834C0glv4BU8gtIJb+AVI39c7aMlTAfabdSeOz6VB+PtEw5OdXHrVr4rXr2rXb4W9TvAf5AfgGp5BeQSn4BqY7q9384ddu64Y++3tuPNJ4fK36vz7xlrJz\/5kMg62O3jLUeGvtSChl\/AankF5BKfgGp5BeQqrL\/\/UffevS+3UDfLMpueeRj\/yhcCN53Vx+PNLzva1o\/tpS\/79du\/AWkkl9AKvkFpJJfQKq5\/vdjblVSb20627cufKxJ\/yNt+G+1l1l78zb6HgPYYvwFpJJfQCr5BaSSX0Cqo\/X3j+zJelIdvLWUf6zH+frMY+vCT1bYbzlZrf5Io56Tm1y79S3ofw\/wJb+AVPILSCW\/gFRH9fvCmuVY45pbDwlsVWEf2Stg67qP9KJ5swNSXwOoW9sk37ruh\/EXkEp+AankF5BKfgGpKvvfn9SkH+lifnLdsRL1uho61rpkTF9HoK3P6lafopN\/nEemevS\/B\/iSX0Aq+QWkkl9Aqsr6fV8rj1s7xT7SXeekGnoyqbK2tS68b3X+yYUKnygYe4NbLy7svXNrS+k14y8glfwCUskvIJX8AlJV1u8\/ThY3n5xq68xbCgu6Wxd6ZCvcvlMV9mUf2\/p3bawGf3Ldkzm0vsdpthh\/AankF5BKfgGp5BeQ6mdsBfbaI23pP\/p6nN9a231ri9ax1dt9cyyFb2Htza+7kP45APILiCW\/gFTyC0jVWL\/vO3bLWLl3bOV3X5+ikwuNKVzLvj5zX8G+r3d+4W9jbKLghPEXkEp+AankF5BKfgGpKuv3H2NdQd7su194G2tj3XUeMbaG\/tYzEh+Fz3WsPdLzZ4vxF5BKfgGp5BeQSn4BqY76399au194qr4NTbf0rRp\/ZHKjr\/99xDLx9W30HXvy8y5sp9P3SRp\/AankF5BKfgGp5BeQ6tH+OWONycfatG+5tRtA322MdZsp1LeDQd+2A2tjLe3H3pHxF5BKfgGp5BeQSn4BqY7q97eMdUAvPPPaI\/3v33wLYxfqawLz5mzV+sxrt\/5TPoy\/gFTyC0glv4BU8gtIddQ\/Z2xh9Lrgd\/LXk4pmX5GysO3J+swnxprAfJx8oX3PZhQeW9hc6OTMJ7+rwjOvGX8BqeQXkEp+AankF5DqqH7\/MVYbHtsd8+PWWue1sTbtJ53112deu9XG51ZPmJPbKFQ4AdXH+AtIJb+AVPILSCW\/gFSN\/e\/7uoIU\/vXkNtYK263cUniTfXsUnNxVoVu\/nL5NZ7fcmmQw\/gJSyS8glfwCUskvIFXl+vs3FbYfKZw3GJvc2NLX5uVWP5m1W1slFBpb6V74jvTPAZBfQCz5BaSSX0Cqv79+39cFZazh\/SNPFBR+VreeguibCRnb3fbWVMAjC\/0\/jL+AVPILSCW\/gFTyC0jVWL8fWxnc10z9zabmheXeNxv19JWKb\/X8Wf91bKvjkx\/\/1m2MMf4CUskvIJX8AlLJLyBVZf3+zdbjhac6qXdGPAawNjYVMPZUwInCJxlOztx3G+sXPzLzY\/wFpJJfQCr5BaSSX0Cqo\/1rAS4y\/gJSyS8glfwCUskvIJX8AlLJLyCV\/AJSyS8glfwCUskvIJX8AlLJLyCV\/AJSyS8glfwCUskvIJX8AlLJLyCV\/AJS\/Q9QRZNt+\/hC\/wAAAABJRU5ErkJggg==","onchain":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAIAAACx0UUtAAAABnRSTlMA\/wD\/AP83WBt9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFi0lEQVR4nO3dwW4sKRBFwfFo\/v+X3+x7UU+IhDq2I7a2qerWFXIKSL7+\/PnzD4T9+\/YLwF\/IKHUySp2MUiej1MkodTJKnYxSJ6PUySh1MkqdjFIno9TJKHUySp2MUiej1MkodTJK3X87f\/z19TX1Hs8+Dl19PPfaT58tfRvPz13y\/JJLn\/ecnWNz5lHqZJQ6GaVORqnbqpk+DLaTeP5ffukf\/6WfLtUfz5Ze8q1S5vk1dgx+BPModTJKnYxSJ6PUTdZMH3YqjGsjfwy1VEI9FzrnqrFnbw11rgGjeZQ6GaVORqmTUeoO1kxN51awdkqonYpq6RN9R+ZR6mSUOhmlTkap+wk1007BsVRSnKs\/ds5RDS53NZlHqZNR6mSUOhml7mDNdO7f88EiaeeXzw21oznUDvModTJKnYxSJ6PUTdZM1zoXDJ46Otd84Vy\/vnMjv9V74pl5lDoZpU5GqZNR6rZqprfWISLP3Sl0ng026Bt8q7eYR6mTUepklDoZpe61+5kGbxUabKAQua5pZ6ilv73WW939TPxkMkqdjFIno9QdvJ9pp1i5dpDo2bVlmMGqaOfzDg41+NWZR6mTUepklDoZpe5r53\/byBrGoMFv462TQ2\/dLHyOeZQ6GaVORqmTUeq2aqbPseZ2sl2rXQaHuvbxr5Wqg+zN4yeTUepklDoZpe7e\/UznNokNVieDt8e+VUGe26m4xN48fhEZpU5GqZNR6g7WTIM7u841QVgyWHBc28g3eD3uEj0g+EVklDoZpU5Gqbu3zvRh8DzTtfZu5y6i3Rl58J0juys\/mEepk1HqZJQ6GaXuXt+8t8qRZzst+JZcWytqFnY7zKPUySh1MkqdjFIXXWfauZh18CzUuZEjXb0HG5OfYx6lTkapk1HqZJS6yV7jb3WKe3bt4NS1Jt9LzrXge+Y8E7+IjFIno9TJKHX3eo0Prqw8O1ckRe6yGlzB+hZt9Myj1MkodTJKnYxSt7U3b2ef29JPr11ftPNWS3977Rala2WQHhD8XjJKnYxSJ6PUTZ5nuraG8fyga70Jng1e9bT0oGtLR9eYR6mTUepklDoZpW6rZtppAT64z+1co+63nLvS9zt+OeZR6mSUOhmlTkapi\/bN+3Ct2fa5rnpLIj0gBh+0wzxKnYxSJ6PUySh1k+eZPgweBhosg3acO1a1s5Fv57lLP73WL+ODeZQ6GaVORqmTUeru9c3bGerZuXtpB6uEc73Vr10EtfMaO8yj1MkodTJKnYxSN7k379x1PoNb5paeuzTyuW7i166aHbyl93nkJeZR6mSUOhmlTkape61v3rka4rmN3uD1RYOVzWAVGOmbZ28ev4iMUiej1MkodZX7mZ5\/ealYGSzOlpzb5Tj4oJ0S6q0W7+ZR6mSUOhmlTkapmzzP9Jcnze0Z2xn5XBu9azvZzh2NGmSdiV9ERqmTUepklLp7NdOgt\/r1PXurq\/e5y5zO7WNcYh6lTkapk1HqZJS6g73GBy0dUTq37DRYUQ3uvjvXemPpuefCYB6lTkapk1HqZJS6St+8D4PlyLmlox2Dzf3ObXpceo2dkZ+ZR6mTUepklDoZpW6yZvpwrTrZKSneulPqw2CFMbgIN\/hce\/P4yWSUOhmlTkapO1gznXNuU9zgUspOr7+lB+089\/lB1+6FemYepU5GqZNR6mSUum9ZMy15q4\/D4A66wTWbpQd9uLYZ74N5lDoZpU5GqZNR6g7WTNc68p3bFfb8oGeDKzrXDmwNrlENMo9SJ6PUySh1MkrdZM301lVAO1vImv0j3moAP3iV8PPIS8yj1MkodTJKnYxS9y3vZ+JXMY9SJ6PUySh1MkqdjFIno9TJKHUySp2MUiej1MkodTJKnYxSJ6PUySh1MkqdjFIno9TJKHX\/Aw8nlPZf\/aeeAAAAAElFTkSuQmCC","lightning":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW0AAAFtCAIAAABDY6x1AAAABnRSTlMA\/wD\/AP83WBt9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAANF0lEQVR4nO3dwY7jOg4F0KnB\/P8vv9l7wQfhkpSqcM62EtuJ0xcCm6Z+\/vnnn\/8ABP57+wKAX0+OACk5AqTkCJCSI0BKjgApOQKk5AiQkiNASo4AKTkCpOQIkJIjQEqOACk5AqTkCJCSI0BKjgApOQKk\/pe8+efnp+s6ap8hsp\/zHo2Yra+5PtTReRtfnPy1PlFt7kRzt2zuHh2999YtSySjmq1HgJQcAVJyBEjJESAV1Vk\/GrfUWquGJtdcn+joyHUdrj5v7ajgd3Sio4+fHKpR8nmT+1sfau0X+9FYwbUeAVJyBEjJESAlR4BUZ531I2mdPDryrVbRpEw11+6ZFO2SztH6qhqrg4134ehEH0mZ+VatdK6AbT0CpOQIkJIjQEqOAKnBOuuauefKa40Fv8YGx7rsWr83uarGLtujy6hfXDv66o76WR\/p311jPQKk5AiQkiNASo4Aqb9QZ62tNb\/ODUatJWXmubkBc4eam6Jan2huqsAfKLtajwApOQKk5AiQkiNAarDOOlcuaixDzo0vbSy8HR25sa22lswrqM+79hHm3Br1eov1CJCSI0BKjgApOQKkOuusaxujr41cbXxw\/u8d+WNuyMAjd7Dxqj4aO4NvsR4BUnIESMkRICVHgNTPI\/1wa+bGCBxpnBqbzCttPO+t7akeuaG1P\/+vzHoESMkRICVHgJQcAVJRnXXu+e65nsX6REeSIzd2UtbnvdUcOVfCbKxZ3vqpzN3u5DKSL9Z6BEjJESAlR4CUHAFSj85nbZyTWr94rjnyY646mLz3Vsk2qTs23sG5bbE+kp7j2lzp9Ij1CJCSI0BKjgApOQKkojrrWu1wrsSVvHdtT\/mknbdxK6+j9zYWoRt7YR8Zbro2r+BjrgprPQKk5AiQkiNASo4AqajOujZVdK7emZy3NtdKuNajeavA2dgZvHYHH+krXWuq\/rAeAVJyBEjJESAlR4BU59yAZJOhxsLqre7Aj6RKl5xobhLqrRmra99k8uIjyQ1NSuPqrMC75AiQkiNASo4AqWgfrO+x3tjr6JHdueojN1baji6y1jj6tD7yx9qc1LW7UGv8b4TGy7APFnCTHAFScgRIyREgNTg3YK4sV3ukTFU3Gr7ZhNo4RfXz4sYBBXO\/usRcDX6uUt7IegRIyREgJUeAlBwBUp1zAxKNW9snBb+PuSpd8hGSLaaSbbHmzPWzHv0Yjt575JFJFx\/2wQIeIkeAlBwBUnIESEV11sZOu8ZS4pG57s+jE83Vlef+enSRtcYRpMmJPuaGSCQnamRuAPAQOQKk5AiQkiNAqnM+6\/fQY6WmuV2jHpmiemvIwJG5J\/TnxpeutS\/fmmV76\/NajwApOQKk5AiQkiNAqnNuwFyP5tFfG7enn6uVzhVW10ZyJub6hhO3hps+UitNWI8AKTkCpOQIkJIjQGpwPutv3Mz96FD1i+c+4Nqg0LkxAnNTY9fqjo1jYhtfXJv7cqxHgJQcAVJyBEjJESDVWWed68JMWkVrjZtmHZmrK9\/a6mmuGXSuMbo+0a0j1ydK7u9ca6z1CJCSI0BKjgApOQKkojpr48b3jdti1eb6Sn9FB+daAfvI3EZQc2XIxr271oZIfDT+v4H1CJCSI0BKjgApOQKkon2w1mZ\/rvVZzj2jfWtLrfrFR+YKfh+3ml\/f\/G0cHeoW6xEgJUeAlBwBUnIESEX9rHOP1a91rM7NK12rla615M4d6tY32fjext9G41dXv\/jD3ADgJjkCpOQIkJIjQKpzbkCt8QnuI3PFs\/pER3+d60qc65W81ZT5yDfZOCVjbrTt2ndlPQKk5AiQkiNASo4AqWv7YN3qw2tsjnykGLx2qI9kQ6YjjeXAufEFcxuqNRb758YeW48AKTkCpOQIkJIjQKpzbkBtbtrlXBW2\/uvcBlRzRbvGoQrJkesTzVXoGzdj+5j7Pc81zjayHgFScgRIyREgJUeA1N7cgKNDNU7ofGS4wdyY2ETj115rrA03vjgpBq+dt9Hcea1HgJQcAVJyBEjJESD1c2ueZWPj3dwWU\/WJ1j7Cx1xXYm1txsKb+6t9rJWoG9kHC3iXHAFScgRIyREgFdVZG5+knnsGf60KW5urw819G0fmSpj1idYG7r7Zc\/wI6xEgJUeAlBwBUnIESHX2s66V9BK3hm429mje+ghH1kqYa0XZ2iNzUm+11VqPACk5AqTkCJCSI0Bqbz7r3G5Vaw\/sJ4da270psbZnWDLp9pFptXNX9SuGSHxYjwApOQKk5AiQkiNAKqqz1m5VrZIT1Yc6+mttrguzUeNdqP+afBu1xp\/Z2lZe9XvNDQD+JjkCpOQIkJIjQGqwzpqYa+m71VbbWP29NevgSGMBe25q7FFbbeNvsnGoQn3etZmy1iNASo4AKTkCpOQIkBrcB+tjbUTlkcbi6K3i2SPzWR95fv9jbqbEm9OIzWcFfis5AqTkCJCSI0BqcB+s2q0CZ6KxiNVYhT06cmJtbujcb+Pj1l1Y28qrvqrGf\/vWI0BKjgApOQKk5AiQGuxnfXMT+dqtDt3f+InmytuNxdFHbsqtndv0swK\/hhwBUnIESMkRIDXYz3qr+\/PN0trReeeOfOsB9o+55\/ePDnVrmumt38ZcOd96BEjJESAlR4CUHAFSnftg3Zo5ujag9OhEycPvt6Zsfqw1GTduEnbkkckAyXvXdhSrWY8AKTkCpOQIkJIjQCqqsyb1v8YZnMmR1+qdaxsyJZeRXGTjoeojN2osftdHbjTXvZ2wHgFScgRIyREgJUeAVGc\/68dcaS3plUxOdHQZaxdZH6qxVpq8+Mhcc\/Ncl21jE2ri1vRW6xEgJUeAlBwBUnIESF3bB6vRIxsU1eYKYI8MKF0bX\/rIlNyjEzV2yt4qftesR4CUHAFScgRIyREgNdjP+tFYO6yf\/T861JHGEtfcXNi5Z+HXCpy3mjLXrvnWdmtzrEeAlBwBUnIESMkRIDXYz3pkbVP1ufM2HvlWK3BtbW+no0M1+gMl+SPmswIPkSNASo4AKTkCpDr7WW\/Ns0xaNhsLnHNbTB1Zmwu7tknYWvfnXL0zmRo798+qkfUIkJIjQEqOACk5AqRe6Wf9mJtYeXSiR0pccyM552rhaxXNxqbMtft76+c9x3oESMkRICVHgJQcAVKD81nXtlxKLiPR2Co613R7671rt+zWY\/W3OkdvDc2oWY8AKTkCpOQIkJIjQGqwzpps9bQ2NnVt16i1CazJ3IDk8fbGpsxHCpyNbbW3dqtaG5phPQKk5AiQkiNASo4AqajOOlcNnXuCe27KZnKoxgG0RyeaKzPXl\/GRdAYnL35z1umRR6YKWI8AKTkCpOQIkJIjQCqaz\/ovh97azajxvY8U3m4NZK3duoNzL67fm3jz26jpZwVukiNASo4AKTkCpKJ+1rnJAHPFpMb3NprrSZ27qlvqz5t8OXPDTR\/5Pc\/9R4H1CJCSI0BKjgApOQKkBvtZv2caazS8taVWYq6GVx9qrp+1fvHH2ryCW5exNq517d9RzXoESMkRICVHgJQcAVKD+2DVGktcc4XGtcJbba6k19gam1xG43mPtnpa6\/19ZNLF0V+PWI8AKTkCpOQIkJIjQCrqZ52bdbrWonp0VfWLE43f1ZvX3HiitWbftdGnazOD55rXrUeAlBwBUnIESMkRIBX1s97aQ2vuxXPjWpOpoo0TWBtHva7NlE1O1Hh\/12asfjR2986xHgFScgRIyREgJUeAVOc+WEmJq\/ER9eS9jcWzW5W2+r239nY6OtSb5tpMa7\/iy7EeAVJyBEjJESAlR4BUZz\/r3MPva0MGGv969OXMjS+tzdXw5m5Z\/eLkULcqqR9rTdUf9sECbpIjQEqOACk5AqQ698Fq7Emda6xM6p0fc1sfHXlk8\/q1fuW1iuatoaprA2gbWY8AKTkCpOQIkJIjQKpzbsCcuaGbc7NO18aXfjS2bK7NhU1e3FiVPLqMpPW58TI+bm2LZT0CpOQIkJIjQEqOAKlr\/ay1xr7Sucri3JjYj7XW2I+1EyW9oY09qYnGOQn1kZOrmmM9AqTkCJCSI0BKjgCpzjrrR2OtdM7aBkVzRehHtly6Vc++NZ+hsbpfnyix9uVYjwApOQKk5AiQkiNAarDOOmdtw61acqIjyaEaHyRv3DOsdnSRyTU3PvuflF0bv\/a1UR4f1iNASo4AKTkCpOQIkPqVddaPuQer5\/Z2WtvM6ZGPkNQs5zbcanzvrSbUuQruEesRICVHgJQcAVJyBEgN1llvjQKoPbJNfH3kj8bKYtKUmZz36FCNow9uzRz4jT\/+hPUIkJIjQEqOACk5AqQ666y3nlme2zSrPtGbc0OPNG4TlRyq8bs6KiSvFVYbN\/qa25stYT0CpOQIkJIjQEqOAKmfNxvvgF\/EegRIyREgJUeAlBwBUnIESMkRICVHgJQcAVJyBEjJESAlR4CUHAFScgRIyREgJUeAlBwBUnIESMkRICVHgNT\/AUs9+oXcS6l0AAAAAElFTkSuQmCC"}}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/store/{id}/invoice/{invoiceId}'
+    metadata:
+      groupName: 'Store Invoices'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Store Invoice'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+      invoiceId:
+        name: invoiceId
+        description: ''
+        required: true
+        example: error
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+      invoiceId: error
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"115a232f-bb20-4e6a-8677-2aedd69373e5","checkoutLink":"http:\/\/localhost\/checkout\/115a232f-bb20-4e6a-8677-2aedd69373e5","satsAmount":15092,"status":"paid","buyerEmail":"shanon.herman@gmail.com","redirectUrl":"http:\/\/www.bailey.biz\/quibusdam-ut-quia-rerum-aut-libero-similique-qui.html","metadata":{"user_id":567,"order_id":656},"createdAt":"2023-05-01T15:32:34.000000Z","paidAt":null,"onchainAddress":"tb1pxk7g48w8ln9g4fzfh4kcny3hqn8xp3wjnduy5g87vk006mvd4puq6kt8el","lightningInvoice":"lntb150920n1pjylkunpp5l0ankvfzh8ww0kvk5sht8t2se5fdwgs2yv0t3fn7e8m969u0e9xsdz42d6x7un9f9h8vmmfvdjjqj2y8gsrzvf4vyerxvnx943xyv3s956x2dnp95urvdeh95exzetyvsmrjvehxdjn2cqzpgxqzfvsp5lvf4fyv0c4ujj3m430dupkpezz2ng3rx7gr9axvfjhzgs0lkqkys9qyyssqp4sy8lpvv8hxg4nswn8w5qqz8g3j0zkpsmw0ydjugn2avrljwa3nstl26rvlrsgkylckau32scs4vehxev42x00v8mdfxjl6y95sdecp3mydk6","store":{"id":"093b3ce7-efdc-4081-9558-51a82140cf37","name":"Miller PLC","url":"https:\/\/bailey.com\/aut-sit-ipsa-provident.html","email":"hudson.rusty@yahoo.com","createdAt":"2023-05-01T15:32:34.000000Z"},"qrCodes":{"unified":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZUAAAGVCAIAAAC5OftsAAAABnRSTlMA\/wD\/AP83WBt9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAQTklEQVR4nO3dSZIlqQ4F0B\/fav9bzpr7gDRKEnAzz5nG8+Y1cQ0TuPj59evX\/wAC\/f\/2DQD8R\/ILSCW\/gFTyC0glv4BU8gtIJb+AVPILSCW\/gFTyC0glv4BU8gtIJb+AVPILSCW\/gFTyC0glv4BU8gtIJb+AVP9UDv75+em6j7V1k\/7PbVQ6+q9PtX6\/Wze5dez6VJXrbt3G3NuvnOrYxz535mO\/uvWZt67bqPItGH8BqeQXkEp+AankF5CqVL\/\/aNwKd1073KosbpV7t\/7aWJP+WN9zpb679cGur7t17DGV6v7c91v5YCvf4NrWd3Tsv3uL8ReQSn4BqeQXkEp+Aak66\/cfc6XEretW1hzPlU4\/KhX6tcZ31HhXjR\/sscmcym00TrncKrp\/3Prv\/jD+AlLJLyCV\/AJSyS8g1WD9fs6xFclzJepKRbPSMWauGcta42MPWxqnPtYa2\/g0TpvMtQ96hPEXkEp+AankF5BKfgGpIuv3jWud12euFFYbG7msX9yoUqGf+1Lm3JqfmZuv2PrlPNLyqML4C0glv4BU8gtIJb+AVIP1+8Ry4FzrkkoH9PWZ12713tk61daxW25tDFxpTLT14sYLbXnkv9v4C0glv4BU8gtIJb+AVJ31+1uLqud62M\/1wNm6buOxc61a5vYZOPb9rt16R3MeeeqjwvgLSCW\/gFTyC0glv4BUpfr9I2tw51rLz5Vdj7XD3zp2bq+AxvYyFXOfc+MTBXOteB7ZdLaR8ReQSn4BqeQXkEp+Aal+5jYHrVS7jzVTP7bmeK5HSuU2HnmiILF3fuM72jL3yMT6QlunOrZvrvEXkEp+AankF5BKfgGpOuv3t\/p+fMwVViul01t3VXlxo1u7+R6bCflovKu5Kaa550nmLvRh\/AWkkl9AKvkFpJJfQKrO\/jlz7bS3dnt9ZM\/OSo22cW\/ULXNL2+emiY49jLE2V0ev7Hw8t3vx2rF5IeMvIJX8AlLJLyCV\/AJSler3c3uFHlsZXNG4HP9YU5SPWx\/sXJuXSrf4xrs61tam8f1uTSNULtTI+AtIJb+AVPILSCW\/gFSl+v2WxtX5xzZDrdQsj63731quvVVJbeyAfmwheOOL58r5W96cvDq2kcKa8ReQSn4BqeQXkEp+AalK\/e\/3rtS3peVcH\/rKdSsvrtzGx61PY+s25qq\/bxb7H+kl\/8g2C\/rfA8gvIJb8AlLJLyDV4P61b+4Ue0zj4vXGF68d24L32K6rc3f1yITMsa5NjZ+V+j2A\/AJiyS8glfwCUg3uX7tlruvLsYLurVM17n27VvnoGr\/fretWXrw+9mNuxfkjH9362DX97wG+5BeQSn4BqeQXkKqz\/\/2tNu23VlE\/cs+3KsfrF2+d+aMyIzH3ha4vNHfPj0wiPdK16cP4C0glv4BU8gtIJb+AVOf2r93SOBXQ6FhdeasGv7VzamPLlMZ3dMtcD5y55elzy\/E\/5qbj9M8BkF9ALPkFpJJfQKpS\/b5x1XhlwW6lkPzRWKLeOvOtHudrx1r4r6977JmBubX7tx7zqJy5Mmt0bH7G+AtIJb+AVPILSCW\/gFSl\/WtvubWI\/NjS57XGLYcr131kB9OPW61p5s4c0f\/+2JzSh\/EXkEp+AankF5BKfgGpzq2\/X5vbhfRY9\/S1xoXvxzrzbJ3qY279\/bEZmMZ2Sbe2Z27cVPjWz2zN+AtIJb+AVPILSCW\/gFSD\/e8rNby5+m7jNquNu4EeK44+sm1w5a6O9aKZe8yj8Xc199RH4yYMH9bfA8gvIJb8AlLJLyBVZ\/3+WEH3VrFwS+OC+7kpiLXKlgWNF2r053VPOjZb9WajLeMvIJX8AlLJLyCV\/AJSlfrf39rfdH0bjyxP\/3hkx9Y5x9buz32Dj5So33xG4lgXoy3GX0Aq+QWkkl9AKvkFpBrsn1PRWNCdm6BobMZSuY2tFx9rArN13a1jt8w9q3DrHUXMzxxj\/AWkkl9AKvkFpJJfQKrS+vvfnHqsonmr6lxReQzgY64zT+OpGqcRGu9q61SV72jLI5Mbt7oJWX8P\/I3kF5BKfgGp5BeQqrT+\/ljX9rnmMx9zsxmV3UAbV\/Y3vsHGHYi3\/nqsYv1Is51brWlubRu8xfgLSCW\/gFTyC0glv4BUpfr9VklvrhN5Y0P0ue7pc+1H5lrxNF5oq9jfeOz6xVvmiv2V+ZnKTMjaXMG+cerD+AtIJb+AVPILSCW\/gFSd6+8bN46du6uKY31djhVlG2vDjbMojT+VYwXsxrL6sRmJ9eRVxbE9lY2\/gFTyC0glv4BU8gtIdW3\/2mPbyq6PPVaSb3yi4KOxMVFjK56t5xzWbm2je2sn4LkmP7f+ceZOZfwFpJJfQCr5BaSSX0Cq0v61c13q5\/rYrN3ac7fy4vWxH3\/8dqdzp2os2K8v1OhYk\/61ud+k8ReQSn4BqeQXkEp+AalK9fu9K71R\/f1o7CdzrIHMlsba8LHPai1xImjuuo2TDOvbeKTnz4fxF5BKfgGp5BeQSn4Bqa71z2lcJ32srtzYE2bruh9bb2Gu20zjLMojGwPPTQXMPVBRcWuHWv1zAOQXEEt+AankF5BqcP\/aj2PddRrrylvXPVbAbmyI3njsXCv9xo997htcm2u1tHVs4xr6rduYY\/wFpJJfQCr5BaSSX0CqUv3+kS7mW8fOLX3eekeNb3CurL51GxWVu5qrwc+1lppbrd54z8f2Ca4w\/gJSyS8glfwCUskvIFXn+vu1xkLyuhb+SEF3rk1740r3yuL1LZVHJo5tWLt15spTH8ceIbg1t7O+UCPjLyCV\/AJSyS8glfwCUnX2v2+ss26Veysa76rxuo+0S2+cGJmrWFcu9OYjBBVzj8R83PrH+TD+AlLJLyCV\/AJSyS8g1c\/c0tjvlcZqeOsLfTzSP2fr2PWpGhfrNy58j7ir9bGN8zO3HiFYX6jxmYFjP\/4P4y8glfwCUskvIJX8AlJdq99\/VEqJ6wvNlU6PlXvn1sE3eqRiPde4JmKma2734q1TrTX+4xh\/AankF5BKfgGp5BeQqrP\/fWPj+bndbSvXrZjrNN9Y7G88VaUDUuNnNdfzZ24\/h8qP8Nb\/4LHJjQ\/jLyCV\/AJSyS8glfwCUpXq93O7Y85VB+dqw1vmtrO91ZX\/2P4GjRMU6zNvHXus19DWmRtVdhKY27\/C+AtIJb+AVPILSCW\/gFSd+9ceW4I8VzjfMrf76dqt5vFb5hZkzzUX+mjsJ3PseYPKsbe20dU\/B\/gbyS8glfwCUskvIFVn\/5y1ymL9LY21w7keKXMN\/hvb2tzqUzS3mHtulfyxxkRbjm2kcOwxgA\/jLyCV\/AJSyS8glfwCUpX2r31z89fG6z7Swn+u68ta4666c9\/CsQb\/jfvIru9qfao\/71uoMP4CUskvIJX8AlLJLyBVqX5funDC2u658uebG\/TemlSpHHtr5fexf5w\/4NOY287C+AtIJb+AVPILSCW\/gFTn+uesNS5uPtYiprFzy\/rFxxaCVxxbcr2l8bOaO9UjH11jP6hj5XzjLyCV\/AJSyS8glfwCUpXq93Nrf+cWgj9yqvWZK8feWmG\/1R7+2GYIH4230Th78+ZHd2xL6QrjLyCV\/AJSyS8glfwCUnWuv7+1tL2isXv6+sVbt\/Exd6G5mnTFrfZBlWOPdamvbO7b2JV\/y9yEjPEXkEp+AankF5BKfgGpOvvfz5Xzt7zZ0f\/YPsFrc7vq3mp4P\/czO9Z755FtdBvpnwPwG\/ILSCW\/gFTyC0hVWn9fcaybeOMS5IiOIh\/HVpyvNRahGxvIHJtiqnxWW39t\/E1GzBsYfwGp5BeQSn4BqeQXkGqwf87H3ArsxuXLcz1\/5nrnNxZl597CVhOYj8Y32FhH\/5i7ya0vZe4NVo7VPwfgS34BqeQXkEp+Aak61983rpJfn\/nWxrGPrEc\/9lTAXE\/3resee4Nb5jrcNz4ycazh\/a2dE4y\/gFTyC0glv4BU8gtIVarf3yo0Nm7huXUbtxZkz11o61SNZebKYwDrU63deoNbF5qbrfqo9Bqa28t5i\/EXkEp+AankF5BKfgGpSvvXHitDzm1Z+sheoXP7m849FFHxyF3NbZVQuY31med+7Y2OVfeNv4BU8gtIJb+AVPILSHVt\/9rG3tuVtjZzbXwai9BzW\/CuX9xoq1J+rBPRlsqjGnPbHTR+ocemIBoZfwGp5BeQSn4BqeQXkKqzf86x1cxz64a3zG2VeqvB\/7EP9ljRveKRZzO2zG3RsHXdY9+v8ReQSn4BqeQXkEp+AakG199XuoJs9Uefa6Z+rLV8421UHNvddn2qLcd2XV07Nj11a4uGtcYmTluMv4BU8gtIJb+AVPILSFXqf\/+bU5\/qf1\/R2D\/nzXbp62MrT1BEzEisb2PL3NMmletWTrV27HkD9XvgbyS\/gFTyC0glv4BUg\/X775XGtixtrGevHbuNW7XSxu9obmLkWFubuV\/OXHX\/I3EP6S3GX0Aq+QWkkl9AKvkFpDpXv1+bq+BWatKNbq3PTpyfufWAwdap5tx6zONWD5wK4y8glfwCUskvIJX8AlKV+t\/PrZJvbAF+rAx5axH5lrm5jrlpk7nP6ta2wesLbf11rtj\/SMujNeMvIJX8AlLJLyCV\/AJSnet\/\/3Grt\/pco4+5hwS27urYNrrHFmTP\/TYeeTaj4s3\/360X658D\/I3kF5BKfgGp5BeQqlS\/f6Rlytqtgn3FrWXTc0vb127tfrB1qsYzz00xrT2yF8TWqdaMv4BU8gtIJb+AVPILSPXo\/rVbx1bMdV6v3EblzI8U3ecc2792fd31qW51uWl88ZZb7aGMv4BU8gtIJb+AVPILSHWu\/31jh\/tjreUrhcZb\/e8rxeBHev480uUmsTXN2vrMjR\/dsd75xl9AKvkFpJJfQCr5BaQ6t\/6+UeMq+bmF73NV58Yl5nOtaeaeRlg7thz\/I6IP1dqtjkD65wB\/I\/kFpJJfQCr5BaTqXH8\/p3GS4VhHka21zpXy59xa51tL22+1eVmb2zf31oL7tUd69q8ZfwGp5BeQSn4BqeQXkKpUv\/84toFrY\/V3rqn52iMN79fmlno3Xmjuszr2e67Mz8wde2yioML4C0glv4BU8gtIJb+AVJ31+49bu64eKzNXXlxpmXJso9zGCm5j1XnrupXPqrIA\/ZFJlWPtg+xfC7BHfgGp5BeQSn4BqQbr93Mam5M07rnb6FY3ko\/1Z1X56G59sHMal7Y3LotvnEOba2pUYfwFpJJfQCr5BaSSX0CqyPr9my1E1sfO7fd5rP\/9R2UmZOuva7dWfq9v4+PYKvm5flCV5xzmvhTjLyCV\/AJSyS8glfwCUg3W72+1EFm\/eKuEWXnxR+NjAGuVJddzHd8bN3\/dOnbrr2uNj2rMze2szdXRb20sYPwFpJJfQCr5BaSSX0Cqzvp9RBeUR3YwrRTsjz1RUFmQvXWqxo0Fjj1f8TH34z+2ue\/WdY89M7Bm\/AWkkl9AKvkFpJJfQKqfW42rAYqMv4BU8gtIJb+AVPILSCW\/gFTyC0glv4BU8gtIJb+AVPILSCW\/gFTyC0glv4BU8gtIJb+AVPILSCW\/gFTyC0glv4BU\/wLGAQ\/rw5RbMAAAAABJRU5ErkJggg==","onchain":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAIAAACx0UUtAAAABnRSTlMA\/wD\/AP83WBt9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFeklEQVR4nO3dQY7rOBJF0c5G73\/Lv+YasKFikL75fc40bUlWPhAKkAr+\/Pnz5z8Q9t9PXwD8HzJKnYxSJ6PUySh1MkqdjFIno9TJKHUySp2MUiej1MkodTJKnYxSJ6PUySh1MkqdjFL3v50v\/\/z8TF3H2uOlq8d5d\/766rxrO0feuZPrixy8Gzt2XpszjlIno9TJKHUySt1WzfQw2E5i\/Sz\/6sF\/8FDnjvypUmZ9GTsGf4JxlDoZpU5GqZNR6iZrpofmjM7OoV7N2aw\/vHMZa5861LkGjMZR6mSUOhmlTkapO1gzNZ2bwdopoXYqqle\/6DcyjlIno9TJKHUySt3fUDPtFByvSopz9cerSamHwemuJuModTJKnYxSJ6PUHayZzj2eN4uknRmswXvVPNQO4yh1MkqdjFIno9RN1kzXOhe8KjjO9dy7dt5rR\/5U74k14yh1MkqdjFIno9Rt1UyfmoeIzH\/sFDqvjrw2WH41GUepk1HqZJQ6GaXuY\/szDe4qNNhAYWeC59V510feOdSr7w6e99ziQ+ModTJKnYxSJ6PUTc4zDT4mn9vytbn8bLAqGtxx6tp2wGvGUepklDoZpU5Gqfu5tjrrXN1zbrJkfajmm0Of2ln4HOModTJKnYxSJ6PUHewB8WoLop0jnzvvOZ+qt37jjrfGUepklDoZpU5GqZucZxqclhic0dk58ivnyqDfuFLR2jy+iIxSJ6PUySh1B3tAvHo8X08O7byUM2iw4Lg2sTS4Pe4rekDwRWSUOhmlTkapm1ybt1MkXfvw4GzQuSm6wY13r\/3AczfHOEqdjFIno9TJKHWTNdPaTt3zymCH7PWHX7k2V9Qs7HYYR6mTUepklDoZpe5er\/HBptc7+7QObsh0bsrqWnuF5hrIB+ModTJKnYxSJ6PUbfWAOFclXJv+ebg2G3TuMh4Ge0+84n0mvoiMUiej1MkodZM100NkM9lruzet7VQnkdp0h5qJv5mMUiej1MkodQfX5q0\/fM7jMq61V3j13Ws73n6qi6AeEHwRGaVORqmTUeoO9hp\/9d1zD+Cf2tN2fXM+tZfVb2QcpU5GqZNR6mSUusl5ph2DK8oGZ5I+JfJ7IzfHOEqdjFIno9TJKHWTvcZ3WtKtD\/XqrzvOddXbuYwd1xYBniuwjKPUySh1MkqdjFI3uTbvXJPv9aHWzr0bNPi202CNGHnLyvtMfBEZpU5GqZNR6g7uaRupbB52XhVa\/\/VaCbX2qS2XzDPxvWSUOhmlTkapu7en7UOk4BhcjHeum\/in6p5z\/6NXjKPUySh1MkqdjFJ3b57p8dQcqajO\/XVtsFbb+fA51ubxRWSUOhmlTkapq7zPdG53n7VmU\/Nzczbn2sNbm8f3klHqZJQ6GaXuJ1KdXHuDZ3Dro8EPP1w70TnmmfgiMkqdjFIno9QdXJv3sNOx7WGngdtgsTL43Z0TDTYkXF\/GtU2zHoyj1MkodTJKnYxSN7k275xXy8DOTTvtzI1du6pXBrfHPRcG4yh1MkqdjFIno9RNzjNde6Fn\/eF1gfWpTYbWR95pan6tQfi5Ca014yh1MkqdjFIno9RV9mdq1lvnzvsw+PN3GqKfO6+1efzNZJQ6GaVORqm79z7ToJ3n8cFtagf7BF7rW3Ftp6tBxlHqZJQ6GaVORqn7lTXTw+DT+mAfh8EVdNcase+UbnqN871klDoZpU5GqTtYM13rYn7tvIMTWoPTP+c6U5zrW\/GKcZQ6GaVORqmTUeoma6ZfsRXQYP\/swasa\/O6OnbtxrqIyjlIno9TJKHUySt29PW3h3zGOUiej1MkodTJKnYxSJ6PUySh1MkqdjFIno9TJKHUySp2MUiej1MkodTJKnYxSJ6PUySh1\/wDMFI7wZjuLZwAAAABJRU5ErkJggg==","lightning":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW0AAAFtCAIAAABDY6x1AAAABnRSTlMA\/wD\/AP83WBt9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAMwUlEQVR4nO3dwW4kOQ4FwPGi\/\/+Xey970kEL4omU0hNxdVVmulz9ILAp6ufv37\/\/AAT+c\/sBgM+TI0BKjgApOQKk5AiQkiNASo4AKTkCpOQIkJIjQEqOACk5AqTkCJCSI0BKjgApOQKk5AiQkiNASo4AqT\/Jm39+fk49x14yRHZ5yP2l9i\/uu1TJwac6eOXEwU\/joEc+2E\/8K7MeAVJyBEjJESAlR4BUVGddHKx47WtLB+t\/pSJWUg8r1eH27z1Y7j344kTfN6dU4Ez+gov9b5SUXcf+lZVYjwApOQKk5AiQkiNA6mSddXGwLrV\/8Vh1sO83Si61\/\/VLn1Wp7tjX\/DpWR+9rXy7dKHHrO7mwHgFScgRIyREgJUeAVGOdtc\/BnsX9T\/sqbYuDDY6lwlvyVH3dn31\/0L2+YQ77G\/WVP8dYjwApOQKk5AiQkiNA6pN11r5K28GN5Lf6O0s3Olgr3T9G8mmM7bLv63U+OK7hTdYjQEqOACk5AqTkCJBqrLPeOqDo1tzQW8M+k57U0o329z1Y\/D5Yoy3dqO9zLo1rKHmkKGs9AqTkCJCSI0BKjgCpk3XWsYPRSw5u6H7zp4u+k5\/6Snq3PsnFJz7nN\/+VWY8AKTkCpOQIkJIjQOrnkX64gw52Ut56jJK+\/s6Dl0pKiX0f3eLgUx3sDP4E6xEgJUeAlBwBUnIESEV11r5i4cGhqmMVr7Gd8l9sfzz4NzporOheuu\/+McYao0usR4CUHAFScgRIyREg1djP2lcsHJtXWnrvm9XQW42VfX+F\/aUSjzxz37lupRuVWI8AKTkCpOQIkJIjQOpknbWvSveJEtetg6AOlor3L16MHU9Vcqv4PTYn4c3OYOsRICVHgJQcAVJyBEidPAerJDmB\/VaxsK8n9VYheS95cangNzZDt1Sk7Jsasb\/R2FFtC\/2swE1yBEjJESAlR4DUyfmsjxxudGsywP5SiVtdp8ljjHWsJo+x11fOL913r+\/KJdYjQEqOACk5AqTkCJA62c86dgB96TFKVy61Ei4OTgbYvzh5qv17xza\/799b0rePfuw3Ovgr9H1V9qxHgJQcAVJyBEjJESB1bT5r39TJWwdQ\/YK+0r6ZsiV9G\/b79I2nfeSQsD3rESAlR4CUHAFScgRInZwbUDJWS7u1+3vvFzxV6VKLW8XRsabq5DFKL37k0CzrESAlR4CUHAFScgRIXetn3b9371aNdn\/lxNjm91v3HSvn99V3xwbu7o2NHy6xHgFScgRIyREgJUeA1Mn5rLc2ofe1A5YKUbeGm+4fI7nUwbpjX59l8uKDH\/ut3f1jc3D3rEeAlBwBUnIESMkRIDV3DtbYTMr9fQ+WXfcOtj8erP+VSsWlK5cuNTaRoHSp5KsyVmXvK\/YnrEeAlBwBUnIESMkRIDU3N6Bv9\/f+vY+czrW\/0eJWvbNvPuutSaglfWNTS\/omsPYNRrAeAVJyBEjJESAlR4BUY511catcNFaGHKvSvTkXdmzCbulSY9N5HznaqsQ5WMBD5AiQkiNASo4AqZN11vXSlxpY98aaBf9tBzLtrzx2DtZe3+f8Zu\/v2N\/IegRIyREgJUeAlBwBUlGddWzk6q0Ov7F6596tDex7j+zuLxkbbXHQm4MCFtYjQEqOACk5AqTkCJBqrLOWHGy862sH7OvQvfWQty51azDC\/kZjz9zXZtr3L2XPegRIyREgJUeAlBwBUnP9rKX3HvTIY+yNdZ2OVfgWj4wBLnnkFLSkgqufFfgMOQKk5AiQkiNAqnE+63qntv3sY9NbS251cC4eGW6w6Kvgjh1AtddX4HxzjID1CJCSI0BKjgApOQKk5uqsJbe21Y8dfbS\/71i1bKwjeaw3tG9QwBcH347967YeAVJyBEjJESAlR4DUyTrr2DnppcfYe6T+l1zqzQkMjwxGHft6j3UkP1IMXliPACk5AqTkCJCSI0Dq2jlYfWWqNzf7\/\/o207779u2ULz1kya0JrLeKstYjQEqOACk5AqTkCJD6c\/sB\/ufgFNWkelS61K1eybF5tH2fZGJ\/qVu7+8c+9uTX72u6tR4BUnIESMkRICVHgFTj3IDFrQbWgwcjla6c3Ghs4uzYzIG9vokEY8a+SH2PkbAeAVJyBEjJESAlR4DUb+hn7VMqU\/U1zo6NID3YlLl\/cenKyX0XfTMHDnYGJ3+FW9NbrUeAlBwBUnIESMkRIBXVWfvKNgcPVSo5eHpT6UZ9YzX7trfvX7zXNxd27PytklsHqo3NWLAeAVJyBEjJESAlR4DUXD9r36lRB5UGso6dz5RUy\/qqzqUXj81n3Ts46zR5qoMfbPLeg38U6xEgJUeAlBwBUnIESEXzWceOp98bGzG7v+9Y\/e8TA0r3Dg7NvdV0W3rx2HlUY53fC+sRICVHgJQcAVJyBEidrLPuPbK9vaSvdNpXldy\/d+zEqb5ZB49U6G+VbEsvHhv0az0CpOQIkJIjQEqOAKnGOuutcZ4Hi6OLsfserBwfLOntjVUHx6Y3jM0b7ps5MDaP1noESMkRICVHgJQcAVIn57OOnRt0a27oWHlskZQDD073HDsmqjQ2df\/TvrEYSU16bODG2LwC6xEgJUeAlBwBUnIESEV11i\/OwnzkhK3FwcOrkk+j76PrayTtG4xQeu+tuRClF\/d9+a1HgJQcAVJyBEjJESAVzQ1YrzW1\/Xl\/qVs75Uv6dqz3jS+9NSY2earSe8e6P\/f6Rh84Bwt4lxwBUnIESMkRIHWyzrpeuu0g+MXYOUljUzYPtk7eKhbuPdJV\/Ehj9NiJYvsrJ6xHgJQcAVJyBEjJESA118\/6SLno1o710mPs3Woz3bvVzZxcuXSjvmEOfS8e++isR4CUHAFScgRIyREg1XgO1q1t5smIykdqlo9MMz343oO9oUkp8eDhVSW3Tm5LHqPEegRIyREgJUeAlBwBUo39rH2bsh8Z1\/pIU+at+Z1j++jHhqqOfRpjwxzG5jNYjwApOQKk5AiQkiNAKqqz3qqH7X2irbZkrK58axDswSvf+pr16fsCH\/zGWo8AKTkCpOQIkJIjQOpknXWvby\/84lZP6thxXIu+MbEHm337SvJf\/I+CW1+VPtYjQEqOACk5AqTkCJA6OTfg\/9zpyXPSS\/fdP8bYiUR9M1Z\/X+fo2GjbRyb7jl15YT0CpOQIkJIjQEqOAKnGftZHqqGJL05CSC7VdyxW3wiCsXm0e309qY8Mr9izHgFScgRIyREgJUeA1LX5rPtLlXxi5uhY\/e9WX+mtObjJjRK35u8+cuWF9QiQkiNASo4AKTkCpD45n3VsM3jy3lsH0H+icN7Xsnlr4mxJ3zPfGsdhPQKk5AiQkiNASo4Aqbm5AWPbn8cKUWPVwUTfTvnErdEHXzyOa+zFCesRICVHgJQcAVJyBEjN9bMubvXRli41tjd8f9+Dbab7p+qrZ9+qsn+xnL\/3yF9\/YT0CpOQIkJIjQEqOAKmoznpQX+l0bPTp2GbwvvL2rU33twqcfR2rnxgDfJD1CJCSI0BKjgApOQKkrp2D9Ui9c+9Wf+etalnftvrFI42zpfuOjXpY9B2opp8VeIgcAVJyBEjJESDV2M96qxr6ZndgX4PjwZplcuX9jW615B6sO745J2FvrGBvPQKk5AiQkiNASo4AqcZ+1uTFB2+0+MTI1dKNHmlvXdw6j2rvzZPMbn2wpSvvWY8AKTkCpOQIkJIjQOpkP+snNs73zStIjA1V6DPW0NlXsB\/rK+0bQTD2Gy2sR4CUHAFScgRIyREg9co5WCVfPK6p7ySkxVhr7NgIgtJ9x8r5t9pq948xNjR3YT0CpOQIkJIjQEqOAKk\/yZtvHQVU+mnpxaXf6GDBb2zneOlGpfrfm4XkW+MaDpY\/D\/ak6mcF3iVHgJQcAVJyBEhFddbFF8\/vKSkVzx7ppEyqdAcbK2+1Ao9tyd+\/+OB9k\/eazwq8S44AKTkCpOQIkDpZZ1307Vk+2OH3yM7x5MqlS41VJce21X+xr7R0o4Pv1c8KvEuOACk5AqTkCJBqrLM+IhnYebBHcy8pB\/Y1ki76LnVwXMP+RqWfjpXzF32V475SsfUIkJIjQEqOACk5AqR+f501cbC0dvB8psUjh1fdmmbwyMjV0ouTn\/b9+gnrESAlR4CUHAFScgRINdZZx6ao9tW0+mas7iVl18WtjeQHy4G3unuT+5b0zaMd+zdoPQKk5AiQkiNASo4AqZ+x3dCJW0cQ9f2Cfd2QfZfaX3nv4H33j9HXN7wYmyjc9x8FB1mPACk5AqTkCJCSI0AqqrMC\/GM9AuTkCJCSI0BKjgApOQKk5AiQkiNASo4AKTkCpOQIkJIjQEqOACk5AqTkCJCSI0BKjgApOQKk5AiQkiNA6r8k0pLsehBxjQAAAABJRU5ErkJggg=="}}}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/store/{id}/invoice/{invoiceId}/status'
+    metadata:
+      groupName: 'Store Invoices'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Store Invoice Status'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the store.'
+        required: true
+        example: 54fbc40d-a8a1-481d-b010-dea627eb491e
+        type: string
+        custom: []
+      invoiceId:
+        name: invoiceId
+        description: ''
+        required: true
+        example: commodi
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 54fbc40d-a8a1-481d-b010-dea627eb491e
+      invoiceId: commodi
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+          "status": "paid",
+          "expires_at": "2023-05-01 15:40:31",
+          "ttl_seconds": 713
+          }
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|4WXtLwKVDWkBb14fs9e6IbA4Z4rLz3DyS96YKvIc'
+    controller: null
+    method: null
+    route: null
+    custom: []

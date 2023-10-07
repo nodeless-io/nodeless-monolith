@@ -1,0 +1,237 @@
+<svg id="HJ_y7Y_nG" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 480">
+    <style>@-webkit-keyframes H1GWdyXtOnM_HyS149Ohf_Animation{0%{-webkit-transform: rotate(4deg);transform: rotate(4deg);}25%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}50%{-webkit-transform: rotate(-4deg);transform: rotate(-4deg);}75%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}100%{-webkit-transform: rotate(4deg);transform: rotate(4deg);}}
+        @keyframes H1GWdyXtOnM_HyS149Ohf_Animation{
+            0%{
+                -webkit-transform: rotate(4deg);
+                transform: rotate(4deg);
+            }
+            25%{
+                -webkit-transform: rotate(0deg);transform: rotate(0deg);
+            }
+            50%{
+                -webkit-transform: rotate(-4deg);transform: rotate(-4deg);
+            }
+            75%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100%{
+                -webkit-transform: rotate(4deg);transform: rotate(4deg);
+            }
+        }
+        
+        @-webkit-keyframes H1GWdyXtOnM_BkCOLFu3z_Animation{0%{-webkit-transform: translate(0px, 5px);transform: translate(0px, 5px);}25%{-webkit-transform: translate(0px, 15px);transform: translate(0px, 15px);}50%{-webkit-transform: translate(0px, 5px);transform: translate(0px, 5px);}75%{-webkit-transform: translate(0px, 15px);transform: translate(0px, 15px);}100%{-webkit-transform: translate(0px, 5px);transform: translate(0px, 5px);}}@keyframes H1GWdyXtOnM_BkCOLFu3z_Animation{0%{-webkit-transform: translate(0px, 5px);transform: translate(0px, 5px);}25%{-webkit-transform: translate(0px, 15px);transform: translate(0px, 15px);}50%{-webkit-transform: translate(0px, 5px);transform: translate(0px, 5px);}75%{-webkit-transform: translate(0px, 15px);transform: translate(0px, 15px);}100%{-webkit-transform: translate(0px, 5px);transform: translate(0px, 5px);}}@-webkit-keyframes BJCedyXtd3G_r1_GPYu3f_Animation{0%{-webkit-transform: translate(0px, -2px);transform: translate(0px, -2px);}25%{-webkit-transform: translate(0px, -10px);transform: translate(0px, -10px);}50%{-webkit-transform: translate(0px, -2px);transform: translate(0px, -2px);}75%{-webkit-transform: translate(0px, -10px);transform: translate(0px, -10px);}100%{-webkit-transform: translate(0px, -2px);transform: translate(0px, -2px);}}@keyframes BJCedyXtd3G_r1_GPYu3f_Animation{0%{-webkit-transform: translate(0px, -2px);transform: translate(0px, -2px);}25%{-webkit-transform: translate(0px, -10px);transform: translate(0px, -10px);}50%{-webkit-transform: translate(0px, -2px);transform: translate(0px, -2px);}75%{-webkit-transform: translate(0px, -10px);transform: translate(0px, -10px);}100%{-webkit-transform: translate(0px, -2px);transform: translate(0px, -2px);}}@-webkit-keyframes SyPgOkQFOnf_Hk_Drq_3f_Animation{0%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}25%{-webkit-transform: translate(0px, -20px);transform: translate(0px, -20px);}49.72%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}75%{-webkit-transform: translate(0px, -20px);transform: translate(0px, -20px);}100%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}}@keyframes SyPgOkQFOnf_Hk_Drq_3f_Animation{0%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}25%{-webkit-transform: translate(0px, -20px);transform: translate(0px, -20px);}49.72%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}75%{-webkit-transform: translate(0px, -20px);transform: translate(0px, -20px);}100%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}}@-webkit-keyframes rybOyQtOhM_BJ-ALqd2f_Animation{0%{-webkit-transform: translate(0px, 10px);transform: translate(0px, 10px);}25%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}49.72%{-webkit-transform: translate(0px, 10px);transform: translate(0px, 10px);}75%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}100%{-webkit-transform: translate(0px, 10px);transform: translate(0px, 10px);}}@keyframes rybOyQtOhM_BJ-ALqd2f_Animation{0%{-webkit-transform: translate(0px, 10px);transform: translate(0px, 10px);}25%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}49.72%{-webkit-transform: translate(0px, 10px);transform: translate(0px, 10px);}75%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}100%{-webkit-transform: translate(0px, 10px);transform: translate(0px, 10px);}}#HJ_y7Y_nG *{-webkit-animation-duration: 12s;animation-duration: 12s;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);animation-timing-function: cubic-bezier(0, 0, 1, 1);}#HJfuJQFuhz{fill: #5db7f7;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#SyQ_1QKuhG{fill: none;stroke-miterlimit: 10;stroke: #caeaff;stroke-width: 1.5px;-webkit-transform:  translate(63px, -147.33px) rotate(11.2deg);transform:  translate(63px, -147.33px) rotate(11.2deg);}#HkE_yXYuhz{-webkit-mask: url(#mask);mask: url(#mask);}#ByH_k7F_2f{opacity: 0.5;}#BJU_1mK_3G{-webkit-transform:  translate(530.21px, 102px);transform:  translate(530.21px, 102px);}#S1DOJQt_hf{fill: url(#linear-gradient);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#ByuukQFd2z{fill: #c8e9ff;-webkit-transform:  translate(52.01px, -150.67px) rotate(11.2deg);transform:  translate(52.01px, -150.67px) rotate(11.2deg);}#SJKOymYdnM{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;-webkit-transform:  translate(57.46px, -149px) rotate(11.2deg);transform:  translate(57.46px, -149px) rotate(11.2deg);}#S19ukmYu3z{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;-webkit-transform:  translate(63.38px, -143.34px) rotate(11.2deg);transform:  translate(63.38px, -143.34px) rotate(11.2deg);}#Syi_1mYdnM{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;-webkit-transform:  translate(65.53px, -150.45px) rotate(11.2deg);transform:  translate(65.53px, -150.45px) rotate(11.2deg);}#Hkn_y7FOhf{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;-webkit-transform:  translate(65.1px, 683.88px) rotate(-78.8deg);transform:  translate(65.1px, 683.88px) rotate(-78.8deg);}#HkauJQt_2z{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;-webkit-transform:  translate(74.97px, 702.28px) rotate(-78.8deg);transform:  translate(74.97px, 702.28px) rotate(-78.8deg);}#SJROkQKd3M{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;-webkit-transform:  translate(84.67px, 720.37px) rotate(-78.8deg);transform:  translate(84.67px, 720.37px) rotate(-78.8deg);}#H11gukXYuhz{fill: #c8e9ff;-webkit-transform:  translate(60.08px, 721.7px) rotate(-78.8deg);transform:  translate(60.08px, 721.7px) rotate(-78.8deg);}#Bylx_kQFdnf{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;-webkit-transform:  translate(94.36px, 738.46px) rotate(-78.8deg);transform:  translate(94.36px, 738.46px) rotate(-78.8deg);}#Sk-xdyXtunG{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;}#rJGx_ymKu2z{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;}#BJQluJmFdnM{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;}#SkEeOkmtOhz{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;}#rySeuymtu2M{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;}#HkUgOJmF_3f{fill: none;stroke-miterlimit: 10;stroke: #c8e9ff;}#ry_x_17tO3G{fill: #f5f1f5;-webkit-transform:  translate(-160.22px, 36.57px) rotate(-32deg);transform:  translate(-160.22px, 36.57px) rotate(-32deg);}#BJtxd1XK_nz{fill: #29db47;-webkit-transform:  matrix(0.85, -0.53, 0.53, 0.85, -183.52, 43.25);transform:  matrix(0.85, -0.53, 0.53, 0.85, -183.52, 43.25);}#Skqlu17tu3G{fill: #29db47;-webkit-transform:  translate(-163.91px, 58px) rotate(-32deg);transform:  translate(-163.91px, 58px) rotate(-32deg);}#Hyil_J7t_2z{fill: #90cb9a;-webkit-transform:  translate(-176.51px, 53.76px) rotate(-32deg);transform:  translate(-176.51px, 53.76px) rotate(-32deg);}#SJne_JXKOhG{fill: #ffd633;}#SyTl_1XKd2z{fill: #ffea96;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#BkJWukmFd3z{fill: #f5f1f5;-webkit-transform:  translate(-273.52px, 147.54px) rotate(-39.65deg);transform:  translate(-273.52px, 147.54px) rotate(-39.65deg);}#r1xWO1XYuhf{fill: #29db47;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#BJZZuJQYu2f{fill: #ffd633;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#ry4Zd17tO3f{fill: url(#linear-gradient-2);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#r1BW_kQYd3M{fill: url(#linear-gradient-3);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#SkI-uyXtunz{-webkit-mask: url(#mask-2);mask: url(#mask-2);}#SJwZu1QF_nz{fill: url(#linear-gradient-4);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#S1u-ukQtuhz{fill: url(#linear-gradient-5);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#SJFW_1mY_nz{opacity: 0.32;fill: url(#linear-gradient-6);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#rkcZOJXKd3M{opacity: 0.5;fill: #439ed6;}#SkiZO1mFOhM{fill: url(#linear-gradient-7);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#Bynbdy7Fu3f{fill: #ff2eb9;-webkit-transform:  translate(-143.59px, 155.63px) rotate(-29.45deg);transform:  translate(-143.59px, 155.63px) rotate(-29.45deg);}#HJaZOyXtOnM{fill: url(#linear-gradient-8);}#rJRWOy7Yu2z{fill: #46c1ce;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#ry1M_yXF_nf{-webkit-mask: url(#mask-3);mask: url(#mask-3);}#Sylf_k7Fu3G{fill: #6adcef;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#Sy-GdkQKu2z{fill: #6adcef;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#r1MMOJmtd2G{-webkit-mask: url(#mask-4);mask: url(#mask-4);}#HJmMd17tu2M{fill: #46c1ce;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#B14fdJXKd2z{fill: #46c1ce;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#ByHMd1QKdhM{fill: #46c1ce;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#ry8zO1XKO2M{fill: #6adcef;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#B1dG_JmKu3f{fill: #5bbdd3;}#r1Yz_JQtunM{fill: #5bbdd3;}#SJczOJ7tuhG{fill: #5bbdd3;}#SJozdkXtd3f{fill: #5bbdd3;}#SynMd1mKO2z{fill: #bf26bf;}#BkTG_yXtOnf{fill: #e525ab;}#SJRG_1XKu2G{fill: #ff40a4;}#S1y7dJXYdhf{-webkit-mask: url(#mask-5);mask: url(#mask-5);}#SJeQd1mt_2z{fill: url(#linear-gradient-9);}#SkZQu17FdhG{fill: #ffcfb0;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#SJM7_JXFd2z{fill: url(#linear-gradient-10);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#H1QXd1XKunf{fill: url(#linear-gradient-11);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#SkN7d1mY_2f{fill: #f25a5a;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#HJrQuk7tO3f{fill: url(#linear-gradient-12);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#HkUX_17Y_nG{-webkit-mask: url(#mask-6);mask: url(#mask-6);}#HyDQOymYd3G{fill: url(#linear-gradient-13);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#B1_QOymK_3z{fill: url(#linear-gradient-14);-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#S1FXu1XY_nf{fill: #20a8f6;}#Bkc7_y7Kdhf{fill: #01fffc;}#B1smOJmtunf{fill: #20a8f6;}#rk2Xd1QYunG{fill: #01fffc;}#SypmdJQFu3z{fill: #17c0d9;}#S1R7uJmFdhz{fill: #17c0d9;}#rykEu17Kdnz{fill: #a9fffb;}#HylV_yXYu3f{fill: #a9fffb;}#SkZ4uyQK_hf{fill: #fff;opacity: 0.5;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#S1GVOymYOhz{fill: #0c7b87;opacity: 0.2;-webkit-transform:  translate(-3.79px, -53px);transform:  translate(-3.79px, -53px);}#rybOyQtOhM_BJ-ALqd2f{-webkit-animation-name: rybOyQtOhM_BJ-ALqd2f_Animation;animation-name: rybOyQtOhM_BJ-ALqd2f_Animation;-webkit-transform-origin: 50% 50%;transform-origin: 50% 50%;transform-box: fill-box;-webkit-transform: translate(0px, 10px);transform: translate(0px, 10px);}#SyPgOkQFOnf_Hk_Drq_3f{-webkit-animation-name: SyPgOkQFOnf_Hk_Drq_3f_Animation;animation-name: SyPgOkQFOnf_Hk_Drq_3f_Animation;-webkit-transform-origin: 50% 50%;transform-origin: 50% 50%;transform-box: fill-box;-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}#BJCedyXtd3G_r1_GPYu3f{-webkit-animation-name: BJCedyXtd3G_r1_GPYu3f_Animation;animation-name: BJCedyXtd3G_r1_GPYu3f_Animation;-webkit-transform-origin: 50% 50%;transform-origin: 50% 50%;transform-box: fill-box;-webkit-transform: translate(0px, -2px);transform: translate(0px, -2px);}#H1GWdyXtOnM_BkCOLFu3z{-webkit-animation-name: H1GWdyXtOnM_BkCOLFu3z_Animation;animation-name: H1GWdyXtOnM_BkCOLFu3z_Animation;-webkit-transform-origin: 50% 50%;transform-origin: 50% 50%;transform-box: fill-box;-webkit-transform: translate(0px, 5px);transform: translate(0px, 5px);}#H1GWdyXtOnM_HyS149Ohf{-webkit-animation-name: H1GWdyXtOnM_HyS149Ohf_Animation;animation-name: H1GWdyXtOnM_HyS149Ohf_Animation;-webkit-transform-origin: 50% 50%;transform-origin: 50% 50%;transform-box: fill-box;-webkit-transform: rotate(4deg);transform: rotate(4deg);}</style>
+    <defs>
+        <filter id="luminosity-invert" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+        </filter>
+        <mask id="mask" x="530.21" y="102" width="98" height="117" maskUnits="userSpaceOnUse">
+            <g class="cls-49">
+                <g transform="translate(-3.79 -53)">
+                    <path class="cls-1" d="M594.89,239.08l1.15-6-18.92-41L572.85,191l-6.54,33c-.48,2.43,5.6,10.09,8,10.57Z" />
+                </g>
+            </g>
+        </mask>
+        <linearGradient id="linear-gradient" x1="575.78" y1="121.51" x2="590.63" y2="111.11" gradientTransform="translate(28.98 -11.18) rotate(11.2)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#7ac3f5" />
+            <stop offset="0.15" stop-color="#7ec5f6" />
+            <stop offset="0.55" stop-color="#85c9f8" />
+            <stop offset="0.88" stop-color="#87caf9" />
+            <stop offset="1" stop-color="#8ecffb" />
+            <stop offset="1" stop-color="#8ecffb" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="341.64" y1="-28.18" x2="412.28" y2="-28.18" gradientTransform="matrix(1, 0.02, 0.02, -1, -0.04, 306.88)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6accef" />
+            <stop offset="0.31" stop-color="#5dd7f1" />
+            <stop offset="1" stop-color="#44ecf4" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1="167.3" y1="567.22" x2="219.28" y2="567.22" gradientTransform="translate(-73.17 12.94) rotate(-29.45)" xlink:href="#linear-gradient-2" />
+        <mask id="mask-2" x="262.47" y="272.19" width="95.75" height="109.58" maskUnits="userSpaceOnUse">
+            <g transform="translate(-3.79 -53)">
+                <g id="_Group_" data-name="&lt;Group&gt;">
+                    <path id="_Path_" data-name="&lt;Path&gt;" class="cls-2" d="M273.57,346.63l19.32,75a2.7,2.7,0,0,0,3.2,1.94h0l56.93-13c5.49-1.34,9.69-4.42,8.89-8.53l-15.65-72Z" />
+                </g>
+            </g>
+        </mask>
+        <linearGradient id="linear-gradient-4" x1="106.09" y1="500.41" x2="219.26" y2="500.41" gradientTransform="translate(-73.17 12.94) rotate(-29.45)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3886a2" />
+            <stop offset="0.41" stop-color="#3899b8" stop-opacity="0.56" />
+            <stop offset="0.81" stop-color="#37aacb" stop-opacity="0.16" />
+            <stop offset="1" stop-color="#37b1d3" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-5" x1="163.89" y1="461.23" x2="163.89" y2="556.6" gradientTransform="translate(-73.17 12.94) rotate(-29.45)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#5bd4e1" />
+            <stop offset="0.16" stop-color="#55d7e5" />
+            <stop offset="1" stop-color="#38e5f7" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-6" x1="317.94" y1="330.4" x2="317.94" y2="423.03" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#linear-gradient-4" />
+        <linearGradient id="linear-gradient-7" x1="273.35" y1="376.71" x2="357.45" y2="376.71" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#linear-gradient-4" />
+        <linearGradient id="linear-gradient-8" x1="83.98" y1="359.89" x2="336.54" y2="359.89" gradientTransform="translate(-76.96 -40.06) rotate(-29.45)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#11b3f2" />
+            <stop offset="0.26" stop-color="#15bcf4" />
+            <stop offset="0.7" stop-color="#1fd6fa" />
+            <stop offset="0.99" stop-color="#27ebff" />
+        </linearGradient>
+        <mask id="mask-3" x="212.77" y="298.67" width="70.83" height="69.95" maskUnits="userSpaceOnUse">
+            <g transform="translate(-3.79 -53)">
+                <g id="_Group_2" data-name="&lt;Group&gt;">
+                    <path id="_Path_2" data-name="&lt;Path&gt;" class="cls-2" d="M235.44,408.66c12.63,7.08,17.37-5.38,20.82-11.79,2.92-5.41,6.74-8.69,10.78-12.3s11.67-5.35,15-8c1.64-1.28,7.53-9.68,4.44-17.28a12.17,12.17,0,0,0-16.1-6.62c-7.49,3.22-15.73,6.78-21.51,12.38-4.66,4.52-20,17.68-19.15,30.26C230.17,401.86,230.63,406,235.44,408.66Z" />
+                </g>
+            </g>
+        </mask>
+        <mask id="mask-4" x="265.07" y="335.3" width="38.46" height="75.84" maskUnits="userSpaceOnUse">
+            <g transform="translate(-3.79 -53)">
+                <g id="_Group_3" data-name="&lt;Group&gt;">
+                    <path id="_Path_3" data-name="&lt;Path&gt;" class="cls-3" d="M288.35,396.69c-8.72,2.49-16.08,17.31-16.55,26.44-.41,8-1.17,13.05,4.65,24.1,5.74,10.89,6.5,11.83,7.88,13.34,1.78,2,8.84,5.94,13.82,1.66,6.13-5.29-1.5-18.14-2.1-19.51s1.69-12.5,4.4-19.46a72.74,72.74,0,0,1,3.3-7.7c.53-1.05,3.07-9.6-3.62-15.19C295.35,396.39,291.63,395.75,288.35,396.69Z" />
+                </g>
+            </g>
+        </mask>
+        <mask id="mask-5" x="173.27" y="45.01" width="214.69" height="253.41" maskUnits="userSpaceOnUse">
+            <g transform="translate(-3.79 -53)">
+                <g id="_Group_4" data-name="&lt;Group&gt;">
+                    <path id="hair" class="cls-2" d="M280.93,338.49l-52,12.93-51.86-200.1S175.84,137,190,133.07,324.84,98,324.84,98s13.35.22,16.78,12S391.75,311,391.75,311l-57,13.9c-2.55-9.57-6-24.31-6-24.31l18.63-4.48s9.67-4,6.75-17.09-27-107.64-27-107.64l-25.32,6.29,6.16,26-26.44,6.43L276.87,190,247.8,196.8Z" />
+                </g>
+            </g>
+        </mask>
+        <linearGradient id="linear-gradient-9" x1="188.99" y1="457.77" x2="242.5" y2="457.77" gradientTransform="translate(-76.96 -40.06) rotate(-29.45)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e27825" />
+            <stop offset="0.06" stop-color="#e47f25" />
+            <stop offset="0.7" stop-color="#f7c028" />
+            <stop offset="1" stop-color="#ffd929" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-10" x1="205.31" y1="233.39" x2="205.31" y2="488.15" gradientTransform="translate(-73.17 12.94) rotate(-29.45)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fae154" />
+            <stop offset="0.01" stop-color="#fbe053" />
+            <stop offset="1" stop-color="#edfe73" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-11" x1="328.63" y1="315.63" x2="363.59" y2="295.89" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#linear-gradient-9" />
+        <linearGradient id="linear-gradient-12" x1="311.49" y1="300.55" x2="311.49" y2="349.27" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#d9857b" />
+            <stop offset="0.31" stop-color="#da8e82" />
+            <stop offset="0.82" stop-color="#dea895" />
+            <stop offset="0.99" stop-color="#e0b29d" />
+        </linearGradient>
+        <mask id="mask-6" x="158.79" y="45.01" width="229.17" height="266.55" maskUnits="userSpaceOnUse">
+            <g transform="translate(-3.79 -53)">
+                <g id="_Group_5" data-name="&lt;Group&gt;">
+                    <path id="_Path_4" data-name="&lt;Path&gt;" class="cls-2" d="M280.93,338.49l-52,12.93-51.86-200.1S175.84,137,190,133.07,324.84,98,324.84,98s13.35.22,16.78,12S391.75,311,391.75,311l-57,13.9c-2.55-9.57-6-24.07-6-24.07l20.94-5.32s7.29-3.43,4.37-16.49-28.62-107.64-28.62-107.64l-18,5,6.63,25.67-29.89,7.64-4.94-20.34L247.8,196.8Z" />
+                </g>
+            </g>
+        </mask>
+        <linearGradient id="linear-gradient-13" x1="96.64" y1="306.38" x2="187.12" y2="358.62" gradientTransform="translate(-73.17 12.94) rotate(-29.45)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#eaa738" />
+            <stop offset="0.26" stop-color="#e9b03b" />
+            <stop offset="0.68" stop-color="#e5ca45" />
+            <stop offset="0.99" stop-color="#e1e14d" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-14" x1="177.06" y1="237.58" x2="262.22" y2="237.58" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#linear-gradient-13" />
+    </defs>
+    <title>Preproduction_h</title>
+    <g id="SkeOJ7tO2G">
+        <g id="rybOyQtOhM_BJ-ALqd2f" data-animator-group="true" data-animator-type="0">
+            <g id="rybOyQtOhM">
+                <path d="M551.14,410.8,439.19,388.63a9.58,9.58,0,0,1-7.51-11.22l39-196.9A9.58,9.58,0,0,1,481.89,173l91.91,18.2a6.51,6.51,0,0,1,4.66,3.69l16.67,36.67a6.42,6.42,0,0,1,.46,4L562.37,403.29A9.58,9.58,0,0,1,551.14,410.8Z" id="HJfuJQFuhz" />
+                <rect x="476.1" y="220.83" width="76.61" height="145.26" rx="1.83" ry="1.83" id="SyQ_1QKuhG" />
+                <g id="HkE_yXYuhz">
+                    <g id="ByH_k7F_2f">
+                        <image width="98" height="117" xlink:href="data:image/png;base64,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" id="BJU_1mK_3G" />
+                    </g>
+                </g>
+                <path d="M596,233.45l-18.92-41.61L571.69,219a9.44,9.44,0,0,0,7.43,11.09Z" id="S1DOJQt_hf" />
+                <rect x="511.79" y="234.05" width="28.31" height="3.33" rx="0.48" ry="0.48" id="ByuukQFd2z" />
+                <rect x="489.92" y="248.2" width="60.5" height="32.27" rx="1" ry="1" id="SJKOymYdnM" />
+                <rect x="483.14" y="281.24" width="22.18" height="32.27" rx="1" ry="1" id="S19ukmYu3z" />
+                <rect x="520.48" y="288.64" width="22.18" height="32.27" rx="1" ry="1" id="Syi_1mYdnM" />
+                <ellipse cx="483" cy="326.5" rx="6.55" ry="5.73" id="Hkn_y7FOhf" />
+                <ellipse cx="499.13" cy="329.7" rx="6.55" ry="5.73" id="HkauJQt_2z" />
+                <ellipse cx="514.99" cy="332.84" rx="6.55" ry="5.73" id="SJROkQKd3M" />
+                <ellipse cx="503.51" cy="348.47" rx="4.81" ry="4.21" id="H11gukXYuhz" />
+                <ellipse cx="530.85" cy="335.98" rx="6.55" ry="5.73" id="Bylx_kQFdnf" />
+                <line x1="490.96" y1="190.39" x2="542.54" y2="232.27" id="Sk-xdyXtunG" />
+                <line x1="548.25" y1="201.54" x2="484.61" y2="220.6" id="rJGx_ymKu2z" />
+                <line x1="483.11" y1="227.13" x2="497.84" y2="261.56" id="BJQluJmFdnM" />
+                <line x1="503.76" y1="231.19" x2="476.74" y2="257.74" id="SkEeOkmtOhz" />
+                <line x1="520.6" y1="234.39" x2="535.33" y2="268.82" id="rySeuymtu2M" />
+                <line x1="541.25" y1="238.45" x2="514.22" y2="265" id="HkUgOJmF_3f" />
+            </g>
+        </g>
+        <g id="SyPgOkQFOnf_Hk_Drq_3f" data-animator-group="true" data-animator-type="0">
+            <g id="SyPgOkQFOnf">
+                <rect x="29.16" y="251.09" width="97.6" height="132.88" rx="6.42" ry="6.42" id="ry_x_17tO3G" />
+                <rect x="68.66" y="348.13" width="18.6" height="26.73" rx="1" ry="1" id="BJtxd1XK_nz" />
+                <rect x="104.19" y="317.41" width="18.6" height="34.54" rx="1" ry="1" id="Skqlu17tu3G" />
+                <rect x="90.5" y="346.84" width="18.6" height="15.38" rx="1" ry="1" id="Hyil_J7t_2z" />
+                <circle cx="61.69" cy="246.62" r="26.92" id="SJne_JXKOhG" />
+                <path d="M61.45,326.22a26.85,26.85,0,0,0,29.71-18.57,17.84,17.84,0,0,0-17.08-5.39,11.93,11.93,0,1,0-10,6.25A17.81,17.81,0,0,0,61.45,326.22Z" id="SyTl_1XKd2z" />
+            </g>
+        </g>
+        <g id="BJCedyXtd3G_r1_GPYu3f" data-animator-group="true" data-animator-type="0">
+            <g id="BJCedyXtd3G">
+                <rect x="94.45" y="434" width="97.6" height="80.66" rx="6.42" ry="6.42" id="BkJWukmFd3z" />
+                <path d="M157.73,454.06l-14,24.9-24.9-14a27.47,27.47,0,1,0,38.94-10.86Z" id="r1xWO1XYuhf" />
+                <path d="M142.28,473.91,155.77,450a27.49,27.49,0,0,0-37.43,10.44Z" id="BJZZuJQYu2f" />
+            </g>
+        </g>
+        <g id="H1GWdyXtOnM_BkCOLFu3z" data-animator-group="true" data-animator-type="0">
+            <g id="H1GWdyXtOnM_HyS149Ohf" data-animator-group="true" data-animator-type="1">
+                <g id="H1GWdyXtOnM">
+                    <g id="ry7ZO1QKu3M">
+                        <path id="ry4Zd17tO3f" data-name="&lt;Path&gt;" d="M352.29,366.06s12.35-4.86,19.84-9.9c7.07-4.77,17-14,26.37-13.85,7.78.15,12.43-4.69,13.33-11.23s-5-14.55-13.6-14.57c-12.35,0-26.76,6.79-34.14,13.44-7.19,6.48-23,13.86-23,13.86Z" />
+                        <path id="r1BW_kQYd3M" data-name="&lt;Path&gt;" d="M351,387.31s20.39.93,30.85,7.75c10,6.52,22.67,17.51,25.12,22.35,1.82,3.59.93,10.54-3,14.71-3.57,3.79-13.25,4.27-19.78-1.53-7.58-6.73-12.73-11.12-16.93-13.18-4.37-2.16-22.78-5-22.78-5Z" />
+                        <g id="SkI-uyXtunz">
+                            <path id="SJwZu1QF_nz" data-name="&lt;Path&gt;" d="M266.26,344.67l20.54,90.1s27.17-15.42,29.9-16c-3.79.91-6.8-1.45-8.07-6.19-1.12-4.16-2.88-10.85-4.76-18.09a6.94,6.94,0,0,0,1.61-.16l48.82-12.28s2.48-.43,3.08-1.74l2.18-3.68s-2.55-2.49-3.08-.47a5.21,5.21,0,0,1-2.62,3S306.7,390.76,305,391.31a3.53,3.53,0,0,1-1.93-.05c-4-15.32-8.21-31.8-8.21-31.8a99.37,99.37,0,0,0,21.51-3c27.63-6.92,37.89-15.23,37.89-15.23l.68-16Z" />
+                        </g>
+                        <path id="S1u-ukQtuhz" data-name="&lt;Path&gt;" d="M273.56,346.84l19.64,74.63a2.69,2.69,0,0,0,3.2,1.94h0l56.92-13c5.5-1.34,9.69-4.41,8.9-8.53l-15.65-72Z" />
+                        <path d="M273.67,348.05l19.16,73.27c.39.19,3.47,2,5.74,1.66,10.28-1.65,57.26-12.54,58.5-13.16,1.44-.72,5.79-3.51,5.05-7.45-.67-3.56-15.65-72-15.65-72Z" id="SJFW_1mY_nz" />
+                        <circle id="rkcZOJXKd3M" data-name="&lt;Path&gt;" cx="322.93" cy="317.22" r="11.32" />
+                        <path d="M273.35,346.63s18.9,75,19.76,75.73.44,1.44,2.89,1.3,14.14-3.48,20.65-4.84a6.56,6.56,0,0,1-5-1c-1.9-1.18-2-1.87-2.55-3.55s-5.32-19.77-5.32-19.77a7.1,7.1,0,0,0,1.61-.16c.7-.17,48.75-12.32,50.75-12.94s1.05-1.86,1.05-1.86l-.8-3.37s-.14,1.29-.86,1.72.51,1.12-1.76,1.28-47.67,11.79-48.9,12.13c-1.07.3-1.83.3-2.12-.75-.63-2.43-8-31.1-8-31.1s1.24-.07,2.44-.09c19.56-.33,51-13.33,52.43-15.29-1.28-4.19-3.88-14.36-3.88-14.36Z" id="SkiZO1mFOhM" />
+                        <ellipse id="Bynbdy7Fu3f" data-name="&lt;Path&gt;" cx="327.07" cy="370.3" rx="8.7" ry="8.53" />
+                        <circle id="HJaZOyXtOnM" cx="283.06" cy="169.97" r="126.28" />
+                        <path id="rJRWOy7Yu2z" data-name="&lt;Path&gt;" d="M244.5,406.58c8.48-2.83,8.56-6.14,8.56-6.14a45.83,45.83,0,0,1,18.73-18.92c8.35-4.36,7.58-4.32,11.07-6.76,3.75-2.63,5.27-9.14,3-14.81-2.17-5.51-7.45-10.18-11.29-9-7.74,2.37-19.88,9.1-25.09,13.61-4.94,4.29-8.42,17.62-9.32,23.81C239.33,394.34,239.28,408.33,244.5,406.58Z" />
+                        <g id="ry1M_yXF_nf">
+                            <path id="Sylf_k7Fu3G" data-name="&lt;Path&gt;" d="M250.7,357.28s15.19-6,22.62,6.83c4.4,7.6-1.53,17.41-1.53,17.41l-6.17,23.69-19.53,16.41-29.53-28.36Z" />
+                        </g>
+                        <path id="Sy-GdkQKu2z" data-name="&lt;Path&gt;" d="M286.86,397.32c-7.29,3.4-12.83,13.73-14.37,21.61s-3.61,17.35,0,29.84c3.42,11.83,7.65,16.4,9,17.9,1.79,2,11.38,10.69,20.21,3.13,6.16-5.27,4.7-14,3.32-16.2-2-3.25-6.68-5.27-8.26-12.57-1.25-5.76,4.68-21.31,6.66-24.87.86-1.56,3.23-9.61-2.53-15C294.72,395.32,290,395.86,286.86,397.32Z" />
+                        <g id="r1MMOJmtd2G">
+                            <path id="HJmMd17tu2M" data-name="&lt;Path&gt;" d="M273.76,414.3s7.93-5,14.74-2.88c10.7,3.33,10.79,15.13,10.79,15.13l8-12.06-6.17-26.19-22.67,10.44Z" />
+                        </g>
+                        <path d="M262.47,356.18s10.3-5.5,13-5.5a11.46,11.46,0,0,1,6.08,2.08c2.57,1.57,6.48,4.29,5.81,14.76-.33,5.26-7.13,9.43-7.13,9.43l-8.42,4.48a47.38,47.38,0,0,0,2.43-7.13c.73-5.17-.86-12.66-6.05-15.88A19.21,19.21,0,0,0,262.47,356.18Z" id="B14fdJXKd2z" />
+                        <path d="M273.76,414.3s2.76-7.17,5.5-10.71c1.15-1.48,4.56-5.65,8.74-7,4.82-1.6,10.66-.19,14.55,5,3.18,4.21,2.89,9.7,2,12.83s-5.28,12.22-5.28,12.22-.63-6.44-2.84-9.14c-3.31-4.05-8.61-7.11-14.32-6.27C279.07,411.59,273.76,414.3,273.76,414.3Z" id="ByHMd1QKdhM" />
+                        <path d="M262.47,356.18a59.41,59.41,0,0,0-20.22,15.4c-9.17,10.84-13.83,17.52-13.25,26.09s4.34,10.34,7.92,11.83c2.84,1.19,8.83,1.42,11.83-1.17,3.4-2.93,6.17-9.5,8.58-13s7.94-10.5,14.47-13.9c4.73-2.45,5-11.15,1.87-16.67S265.18,356.44,262.47,356.18Z" id="ry8zO1XKO2M" />
+                    </g>
+                    <g id="SyPMdkXtO2f">
+                        <circle id="B1dG_JmKu3f" data-name="&lt;Path&gt;" cx="130.21" cy="80.35" r="8.44" />
+                        <polygon id="r1Yz_JQtunM" data-name="&lt;Path&gt;" points="173.64 108.62 135.32 85.98 136.76 82.47 175.98 103.88 173.64 108.62" />
+                        <circle id="SJczOJ7tuhG" data-name="&lt;Path&gt;" cx="353.8" cy="8.89" r="8.44" />
+                        <polygon id="SJozdkXtd3f" data-name="&lt;Path&gt;" points="331.12 55.48 348.85 14.66 352.51 15.66 336.12 57.22 331.12 55.48" />
+                        <polygon id="SynMd1mKO2z" data-name="&lt;Path&gt;" points="175.68 32.68 205.85 24.32 244.85 65.96 213.99 73.94 175.68 32.68" />
+                        <polygon id="BkTG_yXtOnf" data-name="&lt;Path&gt;" points="265.79 8.91 296.46 0.66 287.24 55.02 256.38 63.01 265.79 8.91" />
+                        <polygon id="SJRG_1XKu2G" data-name="&lt;Path&gt;" points="211.31 22.88 205.85 24.32 243.21 64.21 246.93 68.1 291.22 56.6 300.01 0 296.46 0.66 287.31 54.37 249.31 63.82 211.31 22.88" />
+                        <g id="S1y7dJXYdhf">
+                            <polygon id="SJeQd1mt_2z" points="349.25 221.64 362.37 272.49 321.73 281.75 309.68 232.46 349.25 221.64" />
+                        </g>
+                        <path id="SkZQu17FdhG" d="M270.66,314.49l74.72-17.84s14.79-2.52,10.78-17.56c-4.42-16.55-29.18-108-29.18-108l-86.33,21.55Z" />
+                        <path id="SJM7_JXFd2z" data-name="hair" d="M280.93,338.49l-52,12.93-51.86-200.1S175.84,137,190,133.07,324.84,98,324.84,98s13.35.22,16.78,12S391.75,311,391.75,311l-57,13.9c-2.55-9.57-6-24.31-6-24.31l18.63-4.48s9.67-4,6.75-17.09-27-107.64-27-107.64l-25.32,6.29,6.16,26-26.44,6.43L276.87,190,247.8,196.8Z" />
+                        <path d="M327.78,300.76,334,325.19l30.14-7.42-10.08-38.71s1.19,15.09-8.76,17.49C334.72,299.11,327.78,300.76,327.78,300.76Z" id="H1QXd1XKunf" />
+                        <path id="SkN7d1mY_2f" d="M291.37,271.55l35.19-8.24s3.87,22.61-13.42,26.22S291.37,271.55,291.37,271.55Z" />
+                        <path d="M284.94,311.09l43.75-10.54,9.36,37.87c-3.78,2.78-33.07,11.23-45.32,10.83C289.14,331.68,284.94,311.09,284.94,311.09Z" id="HJrQuk7tO3f" />
+                        <g id="HkUX_17Y_nG">
+                            <path id="HyDQOymYd3G" d="M264.87,358.5l-53-215.64s-1.9-15.08,15.57-19.62,5.67-22.12,5.67-22.12l-70.53,29.55L216,364.56Z" />
+                        </g>
+                        <path d="M225.79,123.73l-37.47,9.83s-14.07,5.05-10.75,20.05C180.32,166.06,229,351.42,229,351.42l33.26-8.15s-48-194.14-50.28-203.71C211.61,135.06,216.22,126.76,225.79,123.73Z" id="B1_QOymK_3z" />
+                        <polygon id="S1FXu1XY_nf" points="239.88 189.72 282.03 179.26 287.3 201.93 245.4 211.91 239.88 189.72" />
+                        <polygon id="Bkc7_y7Kdhf" points="246.3 188.16 288.45 177.7 293.72 200.37 251.82 210.35 246.3 188.16" />
+                        <polygon id="B1smOJmtunf" points="297.56 175.59 339.7 165.13 344.98 187.8 303.07 197.78 297.56 175.59" />
+                        <polygon id="rk2Xd1QYunG" points="304 174.05 346.15 163.59 351.43 186.26 309.52 196.24 304 174.05" />
+                        <polygon id="SypmdJQFu3z" points="277 204.35 274.93 194.99 283.07 193.03 285.16 202.41 277 204.35" />
+                        <polygon id="S1R7uJmFdhz" points="334.7 190.25 332.6 180.9 340.86 178.9 342.86 188.31 334.7 190.25" />
+                        <polygon id="rykEu17Kdnz" points="258.09 208.86 266.12 183.24 277.67 180.37 270.43 205.92 258.09 208.86" />
+                        <polygon id="HylV_yXYu3f" points="315.79 194.75 323.82 169.13 335.37 166.27 328.13 191.81 315.79 194.75" />
+                        <path id="SkZ4uyQK_hf" d="M295.38,105.18a130.74,130.74,0,0,1,77,199.23,118.23,118.23,0,0,0-77-199.23Z" />
+                        <path id="S1GVOymYOhz" d="M201.56,285.36A144.42,144.42,0,0,1,190.84,166.8a96.59,96.59,0,0,0,27.21,142A146.1,146.1,0,0,1,201.56,285.36Z" />
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

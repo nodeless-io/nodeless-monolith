@@ -1,0 +1,215 @@
+/*================= Start breadcrumb_area css =================*/
+.breadcrumb_area{
+    background-image: linear-gradient( 180deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+    position: relative;
+    z-index: 1;
+    padding: 235px 0px 125px;
+    overflow: hidden;
+    .breadcrumb_shap{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+/*================= End breadcrumb_area css =================*/
+
+/*================= Start breadcrumb_area_two css =================*/
+.breadcrumb_area_two{
+    background: #f8f6fe;
+    position: relative;
+    padding: 235px 0px 125px;
+    z-index: 1;
+    .breadcrumb_shap{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+    .bubble{
+        li{
+            background: #5e2ced;
+            opacity: 0.1;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+            &:nth-child(1){
+                left: 220px;
+                bottom: 50px;
+                animation: spin3 2s infinite alternate;
+            }
+            &:nth-child(2){
+                left: 35%;
+                top: 100px;
+                animation: spin 2s infinite alternate;
+            }
+            &:nth-child(3){
+                left: 40%;
+                width: 51px;
+                height: 51px;
+                bottom: 50px;
+                animation: spin1 3s infinite alternate;
+            }
+            &:nth-child(4){
+                left: 42%;
+                bottom: 50px;
+                width: 20px;
+                height: 20px;
+            }
+            &:nth-child(5){
+                left: 76%;
+                width: 51px;
+                height: 51px;
+                top: 160px;
+                animation: spin1 3s infinite alternate;
+            }
+            &:nth-child(6){
+                left: 75%;
+                width: 30px;
+                height: 30px;
+                top: 186px;
+            }
+            &:nth-child(7){
+                left: 52%;
+                top: 150px;
+                width: 20px;
+                height: 20px;
+                animation: spin2 2s infinite alternate;
+            }
+            &:nth-child(8){
+                left: 90%;
+                top: 250px;
+                width: 20px;
+                height: 20px;
+                animation: spin2 2s infinite alternate;
+            }
+        }
+    }
+}
+.breadcrumb_content_two{
+    h1{
+        color: #222d39;
+        margin-bottom: 12px;
+    }
+    .breadcrumb{
+        background: transparent;
+        justify-content: center;
+        li{
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            position: relative;
+            color: #525c7c;
+            a{
+                color:#051441; 
+            }
+            & + li{
+                padding-left: 32px;
+                &:after{
+                    content: "\e649";
+                    font-family: 'themify';
+                    position: absolute;
+                    left: 8px;
+                    top: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: translateX(-10px) scale(0.9);
+    }
+    100%{
+        transform: translateX(30px) scale(1.3) translateY(10px);
+    }
+}
+@keyframes spin1{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+@keyframes spin2{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(40px);
+    }
+}
+@keyframes spin3{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+       transform: translateY(10px); 
+    }
+    50%{
+       transform: translateX(30px); 
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
+/*================= End breadcrumb_area_two css =================*/
+
+/*========= blog_breadcrumb_area css ========*/
+.blog_breadcrumb_area{
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    .background_overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient( -140deg, rgb(94,44,237) 0%, rgb(128,55,218) 100%);
+        opacity: 0.90;
+        z-index: -1;
+        top: 0;
+    }
+    .breadcrumb_content_two{
+        color: #fff;
+        padding-top: 80px;
+        h5{
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 18px;
+            color: #fff;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.25em;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        ol{
+            margin-bottom: 0;
+            li{
+                display: inline-block;
+                font-size: 16px;
+                & + li{
+                    &:before{
+                        content: "\e649";
+                        display: inline-block;
+                        font-family: 'themify';
+                        font-size: 10px;
+                        margin:0px 5px 0px 3px; 
+                    }
+                }
+            }
+        }
+    }
+}
+/*========= blog_breadcrumb_area css ========*/

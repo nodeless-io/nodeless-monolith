@@ -1,0 +1,32 @@
+/*=== fonts ====*/
+$pop: 'Poppins', sans-serif;
+$inter: 'Inter', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+/*===== color =====*/
+$h_dk:#051441;
+$p-color:#677294;
+$rating_star: #febf00;
+$default_blue: #3e5ae8;
+$default_black: #222d39;
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+@mixin transform_time($total_time) {
+    -webkit-transition: $total_time;
+    transition: $total_time;
+}

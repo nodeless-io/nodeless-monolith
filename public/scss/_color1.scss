@@ -1,0 +1,89 @@
+.banner_top .subcribes .btn_submit,.s_features_item.s_features_item_two .s_features_content .learn_btn:hover:before,.price_btn:hover,.testimonial_title .owl-prev:hover, .testimonial_title .owl-next:hover{
+    background: #6754e2;
+}
+.banner_top .subcribes .form-control:focus,.price_btn,.s_subcribes .form-control,.f_widget.about-widget .f_list li a:before{
+    border-color: #6754e2;
+}
+.s_features_item.s_features_item_two .s_features_content .learn_btn:hover,.price_btn,.s_subcribes .btn-submit,.f_widget.about-widget .f_list li a:hover,.f_widget .widget-wrap p a:hover,.footer_bottom a,.menu > .nav-item:hover .nav-link,.menu > .nav-item.active .nav-link,.menu > .nav-item.submenu.mega_menu.mega_menu_two .mega_menu_inner .dropdown-menu .nav-item .item .text:hover,.menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item.active > .nav-link,.footer_bottom a:hover{
+    color: #6754e2;
+}
+
+.w_menu .nav-item:hover .nav-link, .w_menu .nav-item.active .nav-link{
+    color: #fff;
+}
+.menu_two .w_menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu_two .w_menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu_two .w_menu > .nav-item.submenu .dropdown-menu .nav-item.active > .nav-link,.nav_right_btn .login_btn.active,.header_area.navbar_fixed .menu_two .nav_right_btn .login_btn.active, .header_area.navbar_fixed .menu_two .nav_right_btn .login_btn:hover,.slider_btn{
+    color: #00aff0;
+}
+.header_area.navbar_fixed .menu_two .nav_right_btn .login_btn.active, .header_area.navbar_fixed .menu_two .nav_right_btn .login_btn:hover{
+    border-color: #00aff0;
+}
+.header_area.navbar_fixed .menu_two .nav_right_btn .login_btn.active:hover,.slider_btn:hover,.price_tab .hover_bg,.f_widget.about-widget .f_list li a:before{
+    background: #00aff0;
+}
+.startup_tab{
+    .nav-item{
+        &:nth-child(1){
+            .icon{
+                background: #fa6fd1;
+            }
+            .nav-link{
+                &.active{
+                    border-color: #fa6fd1;
+                }
+            }
+        }
+        &:nth-child(2){
+            .icon{
+                background: #6fadfa;
+            }
+            .nav-link{
+                &.active{
+                    border-color: #6fadfa;
+                }
+            }
+        }
+        &:nth-child(3){
+            .icon{
+                background: #f3af4e;
+            }
+            .nav-link{
+                &.active{
+                    border-color: #f3af4e;
+                }
+            }
+        }
+        &:nth-child(4){
+            .icon{
+                background: #aa6ffa;
+            }
+            .nav-link{
+                &.active{
+                    border-color: #aa6ffa;
+                }
+            }
+        }
+        &:nth-child(5){
+            .icon{
+                background: #fa6666;
+            }
+            .nav-link{
+                &.active{
+                    border-color: #fa6666;
+                }
+            }
+        }
+    }
+}
+
+.payment_features_item .learn_btn_two:hover {
+    color: #5f51fb;
+}
+
+.btn_six{
+    color: #fff;
+    background: #17c7bd;
+    &:hover{
+        background: #ebfaf9;
+        color: #17c7bd;
+    }
+}

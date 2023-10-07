@@ -1,0 +1,55 @@
+{
+  "name": "mosaic-react",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/lab": "5.0.0-alpha.120",
+    "@mui/material": "^5.11.9",
+    "@mui/x-date-pickers": "^6.9.0",
+    "@uiw/react-md-editor": "^3.20.9",
+    "antd": "^5.2.2",
+    "axios": "^1.2.2",
+    "chart.js": "^4.2.0",
+    "dayjs": "^1.11.8",
+    "file-saver": "^2.0.5",
+    "laravel-vite-plugin": "^0.7.3",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-auth-code-input": "^3.2.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.2.0",
+    "react-flatpickr": "^3.10.13",
+    "react-json-pretty": "^2.2.0",
+    "react-markdown": "^8.0.7",
+    "react-query": "^3.39.2",
+    "react-router-dom": "^6.3.0",
+    "react-spinners": "^0.13.7",
+    "react-transition-group": "^4.4.2",
+    "rehype-sanitize": "^5.0.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.15.11",
+    "@types/whatwg-fetch": "^0.0.33",
+    "@vitejs/plugin-react": "^3.0.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "vite": "^4.1.2"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false
+  }
+}

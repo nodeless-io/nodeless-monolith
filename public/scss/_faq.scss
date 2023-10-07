@@ -1,0 +1,93 @@
+/*============== faq area css =============*/
+.faq_tab{
+    border:1px solid rgb(244, 244, 249);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+    padding: 50px 40px;
+    .nav-tabs{
+        border: 0px;
+        margin-bottom: 0px;
+        display: block;
+    }
+    .nav-item{
+        margin: 0px;
+        .nav-link{
+            font: 400 16px/22px $pop;
+            color: #677294;
+            padding: 0px;
+            border: 0px;
+            border-radius: 0px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+            cursor: pointer;
+            &:before{
+                content: "";
+                width: 0;
+                height: 1px;
+                background: #5e2ced;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: width 0.2s linear;
+            }
+            &.active{
+                color: #5e2ced;
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.faq_content{
+    .tab-pane{
+        .card{
+            border: 0px;
+            border-radius: 0px;
+            background: transparent;
+            border-bottom: 1px solid #e4e0ee;
+            .card-header{
+                padding: 0px;
+                border: 0px;
+                background: transparent;
+                .btn{
+                    color: #5e2ced;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    font: 500 18px/26px $pop;
+                    padding: 20px 30px 20px 0px;
+                    position: relative;
+                    white-space: normal;
+                    i{
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: none;
+                        font-size: 20px;
+                        & + i{
+                            display: block;
+                        }
+                    }
+                    &.collapsed{
+                        color: #576370;
+                        i{
+                            display: block;
+                            & + i{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .card-body{
+                padding: 0px 0px 45px;
+                font: 400 15px/26px $pop;
+                color: #677294;
+            }
+        }
+    }
+}

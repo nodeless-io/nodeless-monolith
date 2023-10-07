@@ -1,0 +1,252 @@
+/*================= error_area css ==================*/
+.error_area{
+    background: linear-gradient( 180deg, rgba(94,44,237, 0.93) 0%, rgba(164,133,253, 0.90) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    min-height: 650px;
+}
+.error_shap{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.error_contain{
+    h1{
+    font-size: 15vw;
+    line-height: 14vw;
+        margin-bottom: 0px;
+    }
+    h2{
+        letter-spacing: 12px;
+        margin-bottom: 25px;
+    }
+    .about_btn{
+        min-width: 230px;
+        box-shadow: 0px 20px 30px 0px rgba(15, 0, 57, 0.1);
+    }
+}
+/*================= error_area css ==================*/
+
+/*================= error_two_area css ==================*/
+.error_two_area{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    min-height: 750px;
+}
+.error_content_two{
+    h2{
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 50px;
+        color: #051441;
+        margin-top: 40px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .search{
+        margin: 45px 0px 40px;
+        .form-control{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 22px 0px rgba(12, 0, 46, 0.06);
+            border: 1px solid transparent;
+            border-radius: 45px;
+            height: 60px;
+            padding: 0px 30px;
+            color: #677294;
+            font-size: 15px;
+            font-weight: 300;
+            transition: all 0.3s linear;
+            @include placeholder{
+                color: #677294;
+            }
+            &:focus{
+                border-color: #5e2ced;
+            }
+        }
+    }
+    .about_btn{
+        background: #051441;
+        color: #fff;
+        border-radius: 3px;
+        padding: 17px 35px;
+        font-weight: 400;
+        i{
+            vertical-align: middle;
+            padding-left: 5px;
+        }
+        &:hover{
+            box-shadow: none;
+        }
+    }
+}
+/*================= error_two_area css ==================*/
+
+/*================= download_area css ==================*/
+.download_area{
+    height: 100vh;
+    min-height: 700px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.download_parallax_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/new/case/parallax.png") no-repeat scroll center center;
+    z-index: -1;
+}
+.download_content{
+    .download_btn{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 1px solid #f6f5fc;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+        margin-bottom: 60px;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 244, 255);
+            border-radius: 50%;
+            z-index: -2;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160px;
+            height: 160px;
+            background: rgb(241, 236, 255);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .pulse-x{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background: rgb(241, 236, 255);
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            z-index: -2;
+            animation: pulsate 3s infinite;
+        }
+        i{
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+            background-image: linear-gradient( 50deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+            box-shadow: inset 2px -3.464px 6px 0px rgba(34, 10, 104, 0.2);
+            border-radius: 50%;
+            line-height: 120px;
+            font-size: 55px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    } 
+    h2{
+        font-size: 60px;
+        color: #051441;
+        font-weight: 400;
+        margin-bottom: 35px;
+    }
+    p{
+        margin-bottom: 0;
+        font-size: 20px;
+        font-weight: 400;
+        color: #051441;
+        a{
+            color: #5e2ced;
+            position: relative;
+            &:before{
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: #5e2ced;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+.thanks_content{
+    h2{
+        font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    p{
+        color: #677294;
+    }
+    a{
+        font-size: 14px;
+        font-weight: 500;
+        color: #959bad;
+        position: relative;
+        text-transform: uppercase;
+        padding: 0px 6px;
+        display: inline-block;
+        transition: all 0.2s linear;
+        margin-top: 45px;
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid #959bad;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        i{
+            vertical-align: middle;
+            display: inline-block;
+            transition: all 0.3s linear;
+            padding-left: 5px;
+        }
+        &:hover{
+            color: #5e2ced;
+            &:before{
+               border-color: #5e2ced; 
+            }
+            i{
+                transform: translateX(8px);
+            }
+        }
+    }
+}
+/*================= download_area css ==================*/
+
+
+
+
+
