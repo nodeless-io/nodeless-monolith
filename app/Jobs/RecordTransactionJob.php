@@ -119,6 +119,10 @@ class RecordTransactionJob implements ShouldQueue
             }
         }
 
+        if (env('CHARGE_FEES') == false) {
+            return;
+        }
+
         $debit = $event->bitcoinable->transaction()->create([
             'user_id' => $event->bitcoinable->user()->first()->id,
             'amount' => $this->getFee($amountPaid),
@@ -160,6 +164,12 @@ class RecordTransactionJob implements ShouldQueue
             'status' => $status,
             'type' => TransactionType::CREDIT,
         ]);
+
+        Log::info('Created credit transaction ' . $credit->uuid . ' for ' . $event->bitcoinable->uuid);
+
+        if (env('CHARGE_FEES') == false) {
+            return;
+        }
 
         $debit = $event->bitcoinable->transaction()->create([
             'user_id' => $event->bitcoinable->user()->first()->id,
