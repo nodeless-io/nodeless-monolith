@@ -22,6 +22,13 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+
+        if (env('DISABLE_REGISTRATION') == true) {
+            return response()->json([
+                'message' => 'Registration is disabled',
+            ], 422);
+        }
+        
         $request->validate([
             'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'max:100', 'confirmed', Rules\Password::defaults()],

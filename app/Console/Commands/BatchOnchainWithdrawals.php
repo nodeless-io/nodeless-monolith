@@ -40,6 +40,12 @@ class BatchOnchainWithdrawals extends Command
      */
     public function handle()
     {
+
+        if (env('DISABLE_WITHDRAWALS') == true) {
+            $this->info('Withdrawals are disabled, exiting');
+            return Command::SUCCESS;
+        }
+
         $onchainUsers = User::where('default_withdrawal_type', WithdrawalType::ONCHAIN)->where('onchain_address', '!=', null)->get();
 
         $withdrawalUsers = $onchainUsers
@@ -139,13 +145,16 @@ class BatchOnchainWithdrawals extends Command
                 'user_id' => $user->id,
             ]);
 
-            $withdrawal->transaction()->create([
-                'amount' => $fee,
-                'user_id' => $user->id,
-                'type' => TransactionType::DEBIT,
-                'status' => TransactionStatus::SETTLED,
-                'is_fee' => true,
-            ]);
+            if (env('CHARGE_FEES') == true) {
+                $withdrawal->transaction()->create([
+                    'amount' => $fee,
+                    'user_id' => $user->id,
+                    'type' => TransactionType::DEBIT,
+                    'status' => TransactionStatus::SETTLED,
+                    'is_fee' => true,
+                ]);
+            }
+
 
             if ($user->notification_setting !== null && $user->notification_setting->withdrawal_success == true) {
                 Notification::send($user, new WithdrawalSuccessNotification($withdrawal));

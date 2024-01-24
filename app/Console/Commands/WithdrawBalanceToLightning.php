@@ -39,6 +39,12 @@ class WithdrawBalanceToLightning extends Command
      */
     public function handle()
     {
+
+        if (env('DISABLE_WITHDRAWALS') == true) {
+            $this->info('Withdrawals are disabled, exiting');
+            return Command::SUCCESS;
+        }
+        
         $users = User::where('default_withdrawal_type', WithdrawalType::LIGHTNING->value)
             ->where('auto_withdraw', true)
             ->get();

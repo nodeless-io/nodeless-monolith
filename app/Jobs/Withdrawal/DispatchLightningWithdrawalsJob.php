@@ -39,6 +39,11 @@ class DispatchLightningWithdrawalsJob implements ShouldQueue
      */
     public function handle()
     {
+        if (env('DISABLE_WITHDRAWALS') == true) {
+            Log::info('Withdrawals are disabled, exiting');
+            return;
+        }
+        
         foreach ($this->users as $user) {
             if (
                 $user->lightning_address &&
